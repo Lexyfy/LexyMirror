@@ -1,19 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lex-CV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexyfy Portfolio</title>
+    <meta name="description" content="Willkommen auf Lexyfy's Portfolio. Erfahren Sie mehr über meine Fähigkeiten, Projekte und mich.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Willkommen auf meinem Portfolio</h1>
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#projects">Projekte</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <h1>Willkommen AUf Lex's Seite</h1>
-  <p>Hier kommt mein kram</p>
-  <ul>
-    <li>Hier</li>
-    <li>Kommen</li>
-    <li>Sprachen</li>
-  </ul>
-  
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Über mich</h2>
+            <p>Hier kannst du eine kurze Vorstellung über dich schreiben.</p>
+        </section>
+        <section id="skills" aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Fähigkeiten und Zertifikate</h2>
+          <div class="skills-container">
+              <div class="skills-category" id="frontend-skills" aria-labelledby="frontend-skills-heading">
+                  <h3 id="frontend-skills-heading">Front-End</h3>
+                  <ul>
+                      <li>HTML</li>
+                      
+      
+                      <li>CSS</li>
+                     
+      
+                      <li>JavaScript</li>
+                  </ul>
+              </div>
+              <div class="skills-category" id="backend-skills" aria-labelledby="backend-skills-heading">
+                  <h3 id="backend-skills-heading">Back-End</h3>
+                  <ul>
+                      <li>Java</li>
+      
+                      <li>SQL</li>
+                     
+      
+                      <li>PHP</li>
+                  </ul>
+              </div>
+              <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
+                  <h3>Weitere Zertifikate</h3>
+                  <ul>
+                      <li>Linux</li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </section>
+      
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projekte</h2>
+            <div class="project-tile" id="project1" aria-labelledby="project1-heading">
+                <h3 id="project1-heading">Projekt 1</h3>
+                <p><strong>Zielsetzung:</strong> Ziel des Projekts 1.</p>
+                <p>Kurze Beschreibung des Projekts 1.</p>
+            </div>
+            <div class="project-tile" id="project2" aria-labelledby="project2-heading">
+                <h3 id="project2-heading">Projekt 2</h3>
+                <p><strong>Zielsetzung:</strong> Ziel des Projekts 2.</p>
+                <p>Kurze Beschreibung des Projekts 2.</p>
+            </div>
+            <div class="project-tile" id="project3" aria-labelledby="project3-heading">
+                <h3 id="project3-heading">Projekt 3</h3>
+                <p><strong>Zielsetzung:</strong> Ziel des Projekts 3.</p>
+                <p>Kurze Beschreibung des Projekts 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
+        <button id="language-button" aria-label="Sprache wechseln">Sprache wechseln</button>
+        <div>
+          <iframe src="OS HackerX.pdf" id="PDF-Zertifikat-Kali"></iframe>
+          <iframe src="SQL Mimo.pdf" id="PDF-Zertifikat-SQL"></iframe>
+          <iframe src="CSS Mimo.pdf" id="PDF-Zertifikat-CSS"></iframe>
+          <iframe src="HTML Mimo.pdf" id="PDF-Zertifikat-HTML"></iframe>
+        </div>
+    </footer>
 </body>
 </html>
