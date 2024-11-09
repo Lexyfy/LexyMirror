@@ -157,6 +157,15 @@ button:hover {
     flex-direction: column; /* Anordnung der Bilder von horizontal zu vertikal ändern */
     align-items: center; /* Zentriert die Bilder */
   }
+  /* Container für Fähigkeiten */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%; /* Setzt die Breite des Containers auf 80% */
+  margin: 0 auto; /* Zentriert den Container auf der Seite */
+}
+
   
   .certificate {
     width: 80%; /* Vergrößert die Bilder auf mobilen Geräten */
