@@ -143,17 +143,25 @@ button {
 button:hover {
   background-color: #C1A7E8;
 }
-/* PDF-Frame-Anpassungen für kleine Bildschirme */
+/* Bildanpassungen für die Zertifikate */
+.certificate {
+  width: 30%; /* Passe die Breite der Zertifikate an */
+  max-width: 300px; /* Setzt eine maximale Breite für größere Bildschirme */
+  height: auto; /* Hält das Seitenverhältnis der Bilder bei */
+  margin: 10px; /* Fügt etwas Abstand zwischen den Bildern hinzu */
+}
+
+/* Mobile Ansicht für die Zertifikate */
 @media (max-width: 768px) {
   .certificates-row {
-    flex-direction: column; /* Ändert die Anordnung von horizontal zu vertikal */
-    align-items: center;
+    flex-direction: column; /* Anordnung der Bilder von horizontal zu vertikal ändern */
+    align-items: center; /* Zentriert die Bilder */
   }
   
   .certificate {
-    width: 80%; /* Passt die Breite der PDFs an, um auf kleineren Bildschirmen besser zu passen */
-    height: auto; /* Lässt die Höhe automatisch anpassen */
-    margin-bottom: 15px; /* Fügt Abstand zwischen den PDFs hinzu */
+    width: 80%; /* Vergrößert die Bilder auf mobilen Geräten */
+    max-width: none; /* Entfernt die maximale Breite für kleinere Bildschirme */
+    margin-bottom: 15px; /* Fügt Abstand zwischen den Bildern hinzu */
   }
 }
 
