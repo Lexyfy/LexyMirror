@@ -46,6 +46,23 @@ nav ul {
 nav li {
   margin: 0 15px;
 }
+/* Stil für die Zertifikate */
+.certificates-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.certificate {
+  width: 30%; /* Passe die Breite der Zertifikate an */
+}
+
+h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
 
 nav a {
   text-decoration: none;
