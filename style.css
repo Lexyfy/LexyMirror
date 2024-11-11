@@ -128,6 +128,68 @@ section {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling für den Kontaktbereich */
+#contact {
+  padding: 40px;
+  background: linear-gradient(to bottom, #f7d5e8, #eabff1); /* Kirschblüten-Farben */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'YourPreferredFont', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+  font-family: 'YourPreferredFont', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c48ad5; /* Sanfter Kirschblüten-Ton */
+  box-shadow: 0 0 10px rgba(196, 138, 213, 0.2);
+}
+
+.contact-form button {
+  background-color: #d18bba; /* Knopf in Kirschblüten-Ton */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'YourPreferredFont', sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: #c178a7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover-Effekt: Der Rest der Seite wird unscharf und dunkler */
+#contact:hover ~ * {
+  filter: blur(3px) brightness(0.8);
+}
+
+
 footer {
   text-align: center;
   padding: 20px;

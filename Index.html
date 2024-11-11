@@ -9,6 +9,7 @@
     <meta name="description"
         content="Willkommen auf Lexyfy's Portfolio. Erfahren Sie mehr über meine Fähigkeiten, Projekte und mich.">
     <link rel="stylesheet" href="style.css">
+    <script src="magic.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#skills">Fähigkeiten</a></li>
                 <li><a href="#projects">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -94,9 +96,11 @@
 
             <div class="project-tile" id="project2" aria-labelledby="project2-heading">
                 <h3 id="project2-heading">Fantasy Brawler</h3>
-                <p><strong>Zielsetzung:</strong> Ziel des Projekts 2.</p>
+                <p><strong>Zielsetzung:</strong> Ein kleines Textbasiertes Kampfsystem was sich an Pokemon oreintiert</p>
                 <hr>
-                <p>Kurze Beschreibung des Projekts 2.</p>
+                <p>
+                    Ursprünglich eine Übungsaufgabe zur Vererbung in Java welche im Ausmaß immer weiter gewachsen ist und sich zu einer Vision eines kleinen Spieles entwickelt hat.
+                </p>
             </div>
 
             <div class="project-tile" id="project3" aria-labelledby="project3-heading">
@@ -115,13 +119,33 @@
                 </p>
 
             </div>
+        </section> 
+        
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Kontakt</h2>
+            <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Dein Name" required>
+            
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+            
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" placeholder="Betreff" required>
+            
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" placeholder="Deine Nachricht" required></textarea>
+            
+                <button type="submit">Senden</button>
+            </form>
         </section>
+        
     </main>
 
     <footer>
         <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
         <!-- Kontaktformular erstellen und anpassen-->
-        <button id="language-button" aria-label="Sprache wechseln">Sprache wechseln</button>
+        <button id="language-button" aria-label="Sprache wechseln">Sprache wechseln (Funktion noch nicht implementiert)</button>
         <div>
 
         </div>
