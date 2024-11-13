@@ -91,7 +91,7 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%; /* Setzt die Breite des Containers auf 80% */
+  width: 95%; /* Setzt die Breite des Containers auf 80% */
   margin: 0 auto; /* Zentriert den Container auf der Seite */
 }
 
@@ -99,7 +99,7 @@ section {
   border-radius: 15px;
   background-color: rgba(245, 215, 235, 0.8);
   padding: 20px;
-  width: 45%;
+  width: 90%;
   margin: 10px;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
