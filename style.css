@@ -48,6 +48,16 @@ nav li {
   margin: 0 15px;
 }
 
+#NightC {
+  background-color: transparent;
+  border: none;
+  color: inherit; /* Passt die Textfarbe an die umgebende Schriftfarbe an */
+  font: inherit; /* Passt die Schriftart und -größe an die umgebende Schrift an */
+  padding: 0; /* Entfernt den Standard-Innenabstand */
+  cursor: pointer;
+}
+
+
 /* Stil für die Zertifikate */
 .certificates-row {
   display: flex;

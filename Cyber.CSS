@@ -1,0 +1,150 @@
+/* Grundlegende Einstellungen */
+body {
+  background-color: #0f0f1c; /* Dunkles Blau-Schwarz für den Hintergrund */
+  color: #f0f0f0; /* Heller Text für Kontrast */
+  font-family: 'Orbitron', sans-serif; /* Futuristische, kantige Schrift */
+  margin: 0;
+  padding: 0;
+}
+
+/* Überschriften mit Neon-Glow */
+h2, h3 {
+  color: #00ffea; /* Neon-Cyan für Überschriften */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0 0 5px #00ffea, 0 0 15px #00d4e0, 0 0 30px #00b8d1;
+}
+
+/* Bilder anpassen */
+img {
+  max-width: 40%; /* Reduzierte Bildgröße auf 40% */
+  height: auto;
+  border: 2px solid #ff0077;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff0077, 0 0 20px #ff4da6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px; /* Abstand zwischen den Bildern */
+}
+
+/* Hover-Effekt für Bilder */
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffea, 0 0 30px #00b8d1;
+}
+
+/* Formularelemente */
+input, textarea, button {
+  background-color: #1b1b2f; /* Dunkler Hintergrund für Eingabefelder */
+  border: 2px solid #ff0077; /* Neon-Magenta für den Rand */
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077;
+}
+
+/* Fokus- und Hover-Effekte */
+input:focus, textarea:focus, button:hover {
+  border-color: #00ffea; /* Neon-Cyan für Fokus */
+  box-shadow: 0 0 15px #00ffea, 0 0 25px #00d4e0;
+  transform: translateY(-2px);
+}
+
+/* Button-Styling */
+button {
+  background-color: #ff0077;
+  color: #0f0f1c;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: pulse 2s infinite; /* Hinzugefügte Pulsanimation */
+}
+
+/* Pulsierende Animation für den Button */
+@keyframes pulse {
+  0%, 100% {
+      box-shadow: 0 0 10px #ff0077, 0 0 20px #ff4da6;
+  }
+  50% {
+      box-shadow: 0 0 20px #ff0077, 0 0 40px #ff4da6;
+  }
+}
+
+/* Hover-Effekt für den Button */
+button:hover {
+  background-color: #00ffea;
+  color: #0f0f1c;
+  transform: translateY(-3px);
+}
+
+/* Formular-Container */
+.contact-form {
+  background-color: #141428;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffea, 0 0 40px #ff0077;
+  animation: fadeIn 1.5s ease; /* Hinzugefügte Fade-in-Animation */
+}
+
+/* Fade-in Animation für das Kontaktformular */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Projektkacheln */
+.project-tile {
+  background-color: #181833;
+  border: 2px solid #ff0077;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px #ff0077, 0 0 30px #ff4da6;
+  animation: slideUp 1s ease; /* Hinzugefügte Slide-up-Animation */
+  margin-bottom: 20px; /* Abstand zwischen den Projektkacheln */
+}
+
+/* Slide-up Animation für Projektkacheln */
+@keyframes slideUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Hover-Effekt für Projektkacheln */
+.project-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00ffea, 0 0 40px #00b8d1;
+  filter: brightness(1.2);
+}
+
+/* Effekt für Kontrastreduktion beim Hover */
+.project-tile:hover ~ .project-tile, 
+.contact-form:hover ~ .project-tile {
+  filter: blur(2px) brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+/* Links im Cyberpunk-Stil */
+a {
+  color: #ff0077;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ffea;
+}
