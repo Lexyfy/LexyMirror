@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexyfy Portfolio</title>
+    <meta name="description"
+        content="Welcome to Lexyfy's Portfolio. Learn more about my skills, projects, and myself.">
+    <link rel="stylesheet" href="style.css">
+    <script src="magic.js"></script>
+</head>
+
+<body>
+    <header>
+      <a href="Index.html"><button id="language-button" aria-label="Change Language" onclick="">Sprache wechseln (deutsch)</button>
+</a>
+        <h1>Welcome to my Portfolio</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                Welcome to my portfolio page! I'm Lex, a young and ambitious programmer currently undergoing retraining as an application developer at the Vocational Support Center Berlin-Brandenburg in Mühlenbeck. My goal is to successfully complete my training as an IT specialist in application development at the IHK by the end of 2025.
+            </p>
+            <p>
+                As a queer individual, I am proud to be open and creative, and I love bringing innovative ideas into the world of software development. My main interests are databases, web development, and <button id="NightC" onclick="StyleNight()">cyber</button> security. With enthusiasm and openness, I take on new challenges and look forward to implementing creative and secure solutions.
+            </p>
+            <p>
+                My focus is on continuously learning and developing to make a valuable contribution in the dynamic world of IT.
+            </p>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills and Certificates</h2>
+            <div class="skills-container">
+                <div class="skills-category" id="frontend-skills" aria-labelledby="frontend-skills-heading">
+                    <h3 id="frontend-skills-heading">Front-End</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category" id="backend-skills" aria-labelledby="backend-skills-heading">
+                    <h3 id="backend-skills-heading">Back-End</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
+                    <!-- Make view responsive -->
+                    <h3 id="OS-skills-heading">Additional Certificates</h3>
+                    <div class="certificates-row">
+                        <img src="HTML Mimo_page-0001.jpg" alt="HTML Certificate" class="certificate">
+                        <img src="CSS Mimo_page-0001.jpg" alt="CSS Certificate" class="certificate">
+                        <img src="SQL Mimo_page-0001.jpg" alt="SQL Certificate" class="certificate">
+                    </div>
+                    <h4>OS Certificates</h4>
+                    <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Certificate" class="certificate">
+                    <img src="spoofing.jpg" alt="OS HackerX Certificate" class="certificate">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects will be clickable later to either open a new page or display a popup window with screenshots -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="project-tile" id="project1" aria-labelledby="project1-heading">
+                <h3 id="project1-heading">DungeonDex</h3>
+                <p><strong>Objective:</strong> DungeonDex connects the worlds of Pokémon and Dungeons & Dragons to offer game masters a comprehensive and creative database of creatures and moral challenges.</p>
+                <hr>
+                <p>The project allows expanding the world of Faerûn with peaceful creatures from the Kanto region, promoting pacifistic problem-solving and offering a dynamic management system for D&D player character values.</p>
+            </div>
+
+            <div class="project-tile" id="project2" aria-labelledby="project2-heading">
+                <h3 id="project2-heading">Fantasy Brawler</h3>
+                <p><strong>Objective:</strong> A small text-based combat system inspired by Pokémon.</p>
+                <hr>
+                <p>
+                    Originally an exercise in inheritance in Java, it grew in scope and evolved into a vision of a small game.
+                </p>
+            </div>
+
+            <div class="project-tile" id="project3" aria-labelledby="project3-heading">
+                <h3 id="project3-heading">Household Planner</h3>
+                <p><strong>Objective:</strong> Development of a program for the dynamic recording and management of income and expenses.</p>
+                <hr>
+                <p>
+                    Due to family reasons, I am currently working on a household planner, structured similarly to Excel, suitable for efficiently tracking a household account's income and expenses. <br>
+                    The prototype is being developed in Java. <br>
+                    In the long term, a cross-platform application is planned, featuring API integration for digital receipts, a scanning function, database connectivity, and more.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Lexyfy. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
