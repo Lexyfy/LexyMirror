@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F3F7;
+  color: #2B2B2B;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #4A3C4A;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5C3D5C;
+  font-weight: 700;
+} 
+#NightC {
+  background-color: transparent;
+  border: none;
+  color: inherit; /* Passt die Textfarbe an die umgebende Schriftfarbe an */
+  font: inherit; /* Passt die Schriftart und -größe an die umgebende Schrift an */
+  padding: 0; /* Entfernt den Standard-Innenabstand */
+  cursor: pointer;
+}
+
+
+section {
+  padding: 30px;
+  background-color: #FFF9FC;
+  color: #333;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #8A508A;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6E3C6E;
+}
+
+/* Höherer Kontrast und Fokus-Hervorhebung */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid #FFD700;
+}
+
+/* Schriftgrößen für bessere Lesbarkeit */
+p, li, label {
+  font-size: 18px;
+}
+.certificates-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.certificate {
+  width: 30%; /* Passe die Breite der Zertifikate an */
+  max-width: 300px; /* Setzt eine maximale Breite für größere Bildschirme */
+  height: auto; /* Hält das Seitenverhältnis der Bilder bei */
+  margin: 10px; /* Fügt etwas Abstand zwischen den Bildern hinzu */
+}
+
+input, textarea {
+  font-size: 16px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
