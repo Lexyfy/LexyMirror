@@ -29,9 +29,10 @@ function xMen() {
   }
 }
 
-// UTM-Parameter aus der URL auslesen
 const urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams.toString()); // Ausgabe der gesamten Parameter
 const utmSource = urlParams.get('utm_source');
+
 
 // Beispiel: Reagiere basierend auf dem UTM-Parameter
 if (utmSource === 'github') {
