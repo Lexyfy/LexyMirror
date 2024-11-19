@@ -29,6 +29,10 @@ function xMen() {
   }
 }
 
+function kleinGroß(){
+  return String.charAt(0).toUpperCase() + string.slice(1);
+}
+
 const urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams.toString()); // Ausgabe der gesamten Parameter
 const utmSource = urlParams.get('utm_source');
@@ -36,23 +40,36 @@ const utmSource = urlParams.get('utm_source');
 
 // Beispiel: Reagiere basierend auf dem UTM-Parameter
 if (utmSource === 'github') {
-  // Aktion für den Zugriff über GitHub
+  const callUp = document.getElementById("Bifrost");
+  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
   console.log("Besucher kam über GitHub.");
-  // Füge hier die spezielle Logik für GitHub hinzu
+  
+
 } else if (utmSource === 'linkedin') {
-  // Aktion für den Zugriff über LinkedIn
+  const callUp = document.getElementById("Bifrost");
+  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
+  
   console.log("Besucher kam über LinkedIn.");
-  // Füge hier die spezielle Logik für LinkedIn hinzu
+  
+
 } else if (utmSource === 'direct') {
-  // Aktion für den Direkt-Link
+  const callUp = document.getElementById("Bifrost");
+  callUp.innerHTML("Willkommen, Sie wurden von Lex direkt eingeladen. " + "<br>" + " schön Sie hier begrüßen zu dürfen. ");
+  
   console.log("Besucher kam über einen Direkt-Link.");
-  // Füge hier die spezielle Logik für Direkt-Link hinzu
+  
+
 } else if (utmSource === 'qr-code') {
-  // Aktion für den Zugriff über den QR-Code von der Visitenkarte
+  const callUp = document.getElementById("Bifrost");
+  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
+  
   console.log("Besucher kam über den QR-Code.");
-  // Füge hier die spezielle Logik für den QR-Code hinzu
+  
+
 } else {
-  // Standardaktion, wenn keine UTM-Parameter gefunden wurden
+  const callUp = document.getElementById("Bifrost");
+  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
+  
   console.log("Besucherquelle unbekannt.");
-  // Füge hier die Logik für unbekannte Quellen hinzu
+  
 }
