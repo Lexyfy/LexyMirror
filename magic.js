@@ -29,47 +29,37 @@ function xMen() {
   }
 }
 
-function kleinGroß(){
-  return String.charAt(0).toUpperCase() + string.slice(1);
+function kleinGroß(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-const urlParams = new URLSearchParams(window.location.search);
-console.log(urlParams.toString()); // Ausgabe der gesamten Parameter
-const utmSource = urlParams.get('utm_source');
+window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams.toString()); // Ausgabe der gesamten Parameter
+  const utmSource = urlParams.get('utm_source');
 
-
-// Beispiel: Reagiere basierend auf dem UTM-Parameter
-if (utmSource === 'github') {
+  // Anpassung der Seite anhand der URL/UTM
   const callUp = document.getElementById("Bifrost");
-  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
-  console.log("Besucher kam über GitHub.");
-  
+  if (callUp) { // Überprüfe, ob das Element existiert
+    if (utmSource === 'github') {
+      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
+      console.log("Besucher kam über GitHub.");
+    } else if (utmSource === 'linkedin') {
+      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
+      console.log("Besucher kam über LinkedIn.");
+    } else if (utmSource === 'direct') {
+      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen. <br> Schön Sie hier begrüßen zu dürfen.";
+      console.log("Besucher kam über einen Direkt-Link.");
+    } else if (utmSource === 'qr-code') {
+      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
+      console.log("Besucher kam über den QR-Code.");
+    } else {
+      callUp.innerHTML = "Willkommen, Sie haben die Seite über ??? betreten";
+      console.log("Besucherquelle unbekannt.");
+    }
+  } else {
+    console.error("Das Element mit der ID 'Bifrost' wurde nicht gefunden.");
+  }
+};
 
-} else if (utmSource === 'linkedin') {
-  const callUp = document.getElementById("Bifrost");
-  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
-  
-  console.log("Besucher kam über LinkedIn.");
-  
 
-} else if (utmSource === 'direct') {
-  const callUp = document.getElementById("Bifrost");
-  callUp.innerHTML("Willkommen, Sie wurden von Lex direkt eingeladen. " + "<br>" + " schön Sie hier begrüßen zu dürfen. ");
-  
-  console.log("Besucher kam über einen Direkt-Link.");
-  
-
-} else if (utmSource === 'qr-code') {
-  const callUp = document.getElementById("Bifrost");
-  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
-  
-  console.log("Besucher kam über den QR-Code.");
-  
-
-} else {
-  const callUp = document.getElementById("Bifrost");
-  callUp.innerHTML("Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) +  "betreten");
-  
-  console.log("Besucherquelle unbekannt.");
-  
-}
