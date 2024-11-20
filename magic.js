@@ -28,38 +28,37 @@ function xMen() {
     bChange = 0;
   }
 }
-
+//Zwischenlösung zur dynamischen Begrüßung vlt später noch zu gebrauchen
 function kleinGroß(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);
-  console.log(urlParams.toString()); // Ausgabe der gesamten Parameter
   const utmSource = urlParams.get('utm_source');
 
-  // Anpassung der Seite anhand der URL/UTM
-  // generell noch Stylen und 
+  
+  // Dynamischer Begrüßungstext 
   const callUp = document.getElementById("Bifrost");
-  if (callUp) { // Überprüfe, ob das Element existiert
+  if (callUp) { 
     if (utmSource === 'github') {
-      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
-      console.log("Besucher kam über GitHub.");
+      callUp.innerHTML = "Hey, willkommen! Cool, dass du über GitHub vorbeischaust. Hier findest du Infos zu meinen Projekten und ein bisschen was über mich wenn du Lust auf einen Austausch hast, meld dich einfach!";
+
     } else if (utmSource === 'linkedin') {
-      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
-      console.log("Besucher kam über LinkedIn.");
+      callUp.innerHTML = "Herzlich willkommen! Schön, dass Sie über mein LinkedIn-Profil den Weg hierher gefunden haben. Diese Seite gibt Ihnen einen Einblick in meine Projekte und Fähigkeiten. Ich freue mich auf die Möglichkeit, mit Ihnen in Kontakt zu treten.";
+
     } else if (utmSource === 'direct') {
-      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen. <br> Derzeit bin ich auf der Suche nach einem unbezahlten Praktikumsplatz für die Prüfung bei der IHK. <br> Falls dieses Portfolio von mir Ihnen gefällt und sie ein solches Praktikum anbieten würde ich mich sehr freuen wenn Sie mit mir im über das Kontaktformular <a href='#contact'>Kontakt</a> in Kontakt";
+      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen. <br> Derzeit bin ich auf der Suche nach einem unbezahlten Praktikumsplatz für die Prüfung bei der IHK. <br> Falls dieses Portfolio von mir Ihnen gefällt und sie ein solches Praktikum anbieten würde ich mich sehr freuen wenn Sie mit mir im über das Kontaktformular <a href='#contact'>Hier</a> in Kontakt";
 
     } else if (utmSource === 'qr-code') {
-      callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
-      console.log("Besucher kam über den QR-Code.");
+      callUp.innerHTML = "Willkommen! Es freut mich besonders, Sie hier zu sehen schließlich sind wir uns bereits persönlich begegnet oder haben zumindest meine Visitenkarte in die Hand. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, mich direkt zu kontaktieren";
+      
     } else {
-      callUp.innerHTML = "Willkommen, Sie haben die Seite über ??? betreten";
-      console.log("Besucherquelle unbekannt.");
+      callUp.innerHTML = "Willkommen, Sie haben mein Portfolio über einen nicht vom mir bekannten Link geöffnet...? Normalerweise wäre hier ein dynamischer Begrüßungstext. Trotzdem schön sie hier begrüßen zu dürfen. Schauen sie sich gerne um, hier finden sie allerlei über mich und meine Kentnisse. Da sie die Seite auf einen weg gefunden haben den ich noch nicht entdeckt habe verrate ich Ihnen ein Geheimniss. <br> Ich liebe es kleine Spielerein in meine Seiten einzubauen, noch sind nicht viele Easter Eggs versteckt aber mit der Zeit werden sich über alle meine Seiten kleine Geschichten entwickeln also immer die Augen offen halten";
+      
     }
   } else {
-    console.error("Das Element mit der ID 'Bifrost' wurde nicht gefunden.");
+    console.error("Das Element mit der Bifrost wurde nicht gefunden.");
   }
 };
 

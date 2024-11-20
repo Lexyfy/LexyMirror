@@ -221,6 +221,9 @@ button {
 button:hover {
   background-color: #C1A7E8;
 }
+#Datenschutz{
+  display: none;
+}
 
 /* Mobile Ansicht für die Zertifikate */
 @media (max-width: 768px) {

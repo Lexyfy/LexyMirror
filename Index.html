@@ -5,33 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexyfy Portfolio</title>
-    <meta name="description"
-        content="Willkommen auf Lexyfy's Portfolio. Erfahren Sie mehr über meine Fähigkeiten, Projekte und mich.">
+    <title>Lexyfy Portfolio - Anwendungsentwickler</title>
+    
+    <!-- Meta-Tags für SEO -->
+    <meta name="description" content="Entdecken Sie das Portfolio von Alexander Bahr, einem ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
+    <meta name="author" content="Alexander Bahr">
+    <meta name="keywords" content="Portfolio, Anwendungsentwickler, Programmierer, Webentwicklung, Datenbanken, Cyber Security, Java, HTML, CSS, JavaScript, SQL, PHP, IHK, Praktikum">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="de">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph Meta-Tags für soziale Medien -->
+    <meta property="og:title" content="Lexyfy Portfolio - Anwendungsentwickler">
+    <meta property="og:description" content="Erfahren Sie mehr über Lex, einen kreativen und ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
+    <meta property="og:url" content="https://lexymirror.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="URL_zu_deinem_Bild.jpg"> <!-- URL des Vorschaubilds -->
+    
+    <!-- Twitter Card Meta-Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lexyfy Portfolio - Anwendungsentwickler">
+    <meta name="twitter:description" content="Entdecken Sie Lexyfy's Portfolio und erfahren Sie mehr über Projekte, Fähigkeiten und Kontaktmöglichkeiten.">
+    <meta name="twitter:image" content="URL_zu_deinem_Bild.jpg"> <!-- URL des Vorschaubilds -->
+
+    <!-- Link zum Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="magic.js"></script>
+
+    <!-- JavaScript-Datei -->
+    <script src="magic.js" defer></script>
 </head>
+
 
 <body>
     <header>
         <div id="StyleKing">
-            <button id="xMen" onclick="xMen()">Barrierefrei Modus</button>
+            <button id="xMen" onclick="xMen()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei
+                Modus</button>
             <a href="indexEng.html"><button id="language-button" aria-label="Change Language" onclick="">Switch Language
                     (Englisch)</button></a>
         </div>
         <h1>Alexander Bahr - Anwendungsentwickler</h1>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="#about">Über mich</a></li>
-                <li><a href="#skills">Fähigkeiten</a></li>
-                <li><a href="#projects">Projekte</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#about" aria-label="Gehe zum Abschnitt Über mich">Über mich</a></li>
+                <li><a href="#skills" aria-label="Gehe zum Abschnitt Fähigkeiten">Fähigkeiten</a></li>
+                <li><a href="#projects" aria-label="Gehe zum Abschnitt Projekte">Projekte</a></li>
+                <li><a href="#contact" aria-label="Gehe zum Abschnitt Kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="">
+        <section id="welcome-Message">
             <div id="Bifrost"></div>
         </section>
         <section id="about" aria-labelledby="about-heading">
@@ -39,13 +64,15 @@
             <p>
                 Willkommen auf meiner Portfolio-Seite! Ich bin Lex, ein junger und ambitionierter Programmierer, der
                 derzeit eine Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg in Mühlenbeck
-                absolviert. Mein Ziel ist es, Ende 2025 erfolgreich meinen Abschluss als Fachinformatiker für
+                absolviert. Mein Ziel ist es, Ende 2025 meinen Abschluss als Fachinformatiker für
                 Anwendungsentwicklung bei der IHK zu erlangen.
             </p>
             <p>
                 Als Queere Person bin ich stolz darauf, offen und kreativ zu sein, und ich liebe es, innovative Ideen in
                 die Welt der Softwareentwicklung zu bringen. Meine größten Interessensbereiche sind Datenbanken,
-                Webentwicklung und <button id="NightC" onclick="StyleNight()">Cyber</button> Security. Mit Begeisterung
+                Webentwicklung und <button id="NightC" onclick="StyleNight()"
+                    aria-label="Wechselt zwischen Cyber- und Standardmodus">Cyber-Modus</button> Security. Mit
+                Begeisterung
                 und Offenheit gehe ich neue Herausforderungen an und
                 freue mich darauf, kreative und sichere Lösungen umzusetzen.
             </p>
@@ -56,40 +83,66 @@
         </section>
 
         <section id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Fähigkeiten und Zertifikate</h2>
+            <h2 id="skills-heading">Fähigkeiten</h2>
             <div class="skills-container">
                 <div class="skills-category" id="frontend-skills" aria-labelledby="frontend-skills-heading">
-                    <h3 id="frontend-skills-heading">Front-End</h3>
+                    <h3 id="frontend-skills-heading"> <strong>Front-End</strong></h3>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li>
+                            <p><strong>HTML5</strong> <br>
+                                Die standardisierte Markup-Sprache für die Struktur und Inhalte moderner Webseiten, die
+                                als Fundament jeder Webanwendung dient. <br></p>
+                        </li>
+
+                        <li>
+                            <p><strong>CSS</strong> <br>
+                                Eine leistungsstarke Stylesheet-Sprache, die für die Gestaltung, Formatierung und das
+                                Layout von Webseiten genutzt wird und sie visuell ansprechend macht. <br></p>
+                        </li>
+
+                        <li> <strong>JavaScript</strong> <br>
+                            Eine vielseitige Programmiersprache, die interaktive Funktionen, dynamische Inhalte und
+                            Client-seitige Logik in Webanwendungen ermöglicht. <br>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="skills-category" id="backend-skills" aria-labelledby="backend-skills-heading">
-                    <h3 id="backend-skills-heading">Back-End</h3>
+                    <h3 id="backend-skills-heading"><strong>Back-End</strong></h3>
                     <ul>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>PHP</li>
+                        <li>
+                            <p><strong>Java</strong> <br>
+                                Eine objektorientierte, plattformunabhängige Programmiersprache, ideal für komplexe
+                                Anwendungen, Backend-Systeme und mobile Entwicklung.</p>
+                        </li>
+                        <li>
+                            <p> <strong>SQL</strong><br>
+                                Die Schlüsseltechnologie für das Verwalten, Abrufen und Analysieren von Daten in
+                                relationalen Datenbanksystemen. <br></p>
+                        </li>
+                        <li>
+                            <p> <strong>PHP</strong><br>
+                                Eine serverseitige Skriptsprache, die speziell für die Webentwicklung konzipiert wurde
+                                und dynamische, datenbankgestützte Webseiten ermöglicht. <br></p>
+                        </li>
                     </ul>
                 </div>
+        </section>
+        <section id="Certificate" aria-labelledby="certificate-heading">
+            <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
 
-                <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
-                    <!-- ansicht responsiv erarbeiten -->
-                    <h3 id="OS-skills-heading">Weitere Zertifikate</h3>
-                    <div class="certificates-row">
-                        <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
-                        <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
-                        <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
-                    </div>
-                    <h4>BS-Zertifikate</h4>
-                    <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
-                    <img src="spoofing.jpg" alt="OS HackerX Zertifikat" class="certificate">
-
-
+                <h2 id="OS-skills-heading">Zertifikate</h2>
+                <div class="certificates-row">
+                    <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
+                    <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
+                    <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
                 </div>
+                <h4>BS-Zertifikate</h4>
+                <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
+                <img src="spoofing.jpg" alt="OS HackerX Zertifikat" class="certificate">
+
+
+            </div>
         </section>
 
         <!-- Später sollen die Projekte anklickbar werden um entweder eine neue Seite aufzu rufen oder ein Pop-up Fenster zu öffnen die je aktuelle Screenshots  -->
@@ -160,7 +213,7 @@
     <footer>
         <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
         <div>
-            <p><a href="#">Datenschutz / noch nicht implementiert </a></p>
+            <p id="Datenschutz"><a href="#">Datenschutz / noch nicht implementiert </a></p>
             <p>Derzeit ist diese Seite statisch und nicht in der Lage irgendwelche Daten zu sammeln oder zu speichern.
             </p>
         </div>
