@@ -49,7 +49,7 @@ window.onload = function() {
       callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
       console.log("Besucher kam über LinkedIn.");
     } else if (utmSource === 'direct') {
-      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen. <br> Derzeit bin ich auf der Suche nach einem unbezahlten Praktikumsplatz für die Prüfung bei der IHK. <br> Falls dieses Portfolio von mir Ihnen gefällt und sie ein solches Praktikum anbieten würde ich mich sehr freuen wenn Sie mit mir im über das Kontaktformular " + <a href="#contact">Kontakt</a> + " in Kontakt";
+      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen. <br> Derzeit bin ich auf der Suche nach einem unbezahlten Praktikumsplatz für die Prüfung bei der IHK. <br> Falls dieses Portfolio von mir Ihnen gefällt und sie ein solches Praktikum anbieten würde ich mich sehr freuen wenn Sie mit mir im über das Kontaktformular <a href='#contact'>Kontakt</a> in Kontakt";
 
     } else if (utmSource === 'qr-code') {
       callUp.innerHTML = "Willkommen, Sie haben die Seite über " + kleinGroß(utmSource) + " betreten";
