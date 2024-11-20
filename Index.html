@@ -13,12 +13,13 @@
 </head>
 
 <body>
-    <header><div id="StyleKing">
+    <header>
+        <div id="StyleKing">
             <button id="xMen" onclick="xMen()">Barrierefrei Modus</button>
-            <a href="indexEng.html"><button id="language-button" aria-label="Change Language" onclick="">Switch Language (Englisch)</button></a>
-            <div id="Bifrost"></div>
+            <a href="indexEng.html"><button id="language-button" aria-label="Change Language" onclick="">Switch Language
+                    (Englisch)</button></a>
         </div>
-        <h1>Alexander Bahr</h1>
+        <h1>Alexander Bahr - Anwendungsentwickler</h1>
         <nav aria-label="Hauptnavigation">
             <ul>
                 <li><a href="#about">Über mich</a></li>
@@ -30,6 +31,9 @@
     </header>
 
     <main>
+        <section id="">
+            <div id="Bifrost"></div>
+        </section>
         <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading">Über mich</h2>
             <p>
@@ -41,7 +45,8 @@
             <p>
                 Als Queere Person bin ich stolz darauf, offen und kreativ zu sein, und ich liebe es, innovative Ideen in
                 die Welt der Softwareentwicklung zu bringen. Meine größten Interessensbereiche sind Datenbanken,
-                Webentwicklung und <button id="NightC" onclick="StyleNight()">Cyber</button> Security. Mit Begeisterung und Offenheit gehe ich neue Herausforderungen an und
+                Webentwicklung und <button id="NightC" onclick="StyleNight()">Cyber</button> Security. Mit Begeisterung
+                und Offenheit gehe ich neue Herausforderungen an und
                 freue mich darauf, kreative und sichere Lösungen umzusetzen.
             </p>
             <p>
@@ -82,9 +87,9 @@
                     <h4>BS-Zertifikate</h4>
                     <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
                     <img src="spoofing.jpg" alt="OS HackerX Zertifikat" class="certificate">
-                    
 
-            </div>
+
+                </div>
         </section>
 
         <!-- Später sollen die Projekte anklickbar werden um entweder eine neue Seite aufzu rufen oder ein Pop-up Fenster zu öffnen die je aktuelle Screenshots  -->
@@ -92,18 +97,24 @@
             <h2 id="projects-heading">Projekte</h2>
             <div class="project-tile" id="project1" aria-labelledby="project1-heading">
                 <h3 id="project1-heading">DungeonDex</h3>
-                <p><strong>Zielsetzung:</strong> Das DungeonDex verbindet die Welten von Pokémon und Dungeons & Dragons, um Spielleitern eine umfassende und kreative Datenbank mit Kreaturen und moralischen Herausforderungen zu bieten.</p>
+                <p><strong>Zielsetzung:</strong> Das DungeonDex verbindet die Welten von Pokémon und Dungeons & Dragons,
+                    um Spielleitern eine umfassende und kreative Datenbank mit Kreaturen und moralischen
+                    Herausforderungen zu bieten.</p>
                 <hr>
-                <p>Das Projekt ermöglicht es, die Welt von Faerûn um friedliche Kreaturen der Kanto-Region zu erweitern und fördert pazifistische Problemlösungen sowie eine dynamische Verwaltung von Charakterwerten für D&D-Spieler.</p>
+                <p>Das Projekt ermöglicht es, die Welt von Faerûn um friedliche Kreaturen der Kanto-Region zu erweitern
+                    und fördert pazifistische Problemlösungen sowie eine dynamische Verwaltung von Charakterwerten für
+                    D&D-Spieler.</p>
             </div>
-            
+
 
             <div class="project-tile" id="project2" aria-labelledby="project2-heading">
                 <h3 id="project2-heading">Fantasy Brawler</h3>
-                <p><strong>Zielsetzung:</strong> Ein kleines Textbasiertes Kampfsystem was sich an Pokemon oreintiert</p>
+                <p><strong>Zielsetzung:</strong> Ein kleines Textbasiertes Kampfsystem was sich an Pokemon oreintiert
+                </p>
                 <hr>
                 <p>
-                    Ursprünglich eine Übungsaufgabe zur Vererbung in Java welche im Ausmaß immer weiter gewachsen ist und sich zu einer Vision eines kleinen Spieles entwickelt hat.
+                    Ursprünglich eine Übungsaufgabe zur Vererbung in Java welche im Ausmaß immer weiter gewachsen ist
+                    und sich zu einer Vision eines kleinen Spieles entwickelt hat.
                 </p>
             </div>
 
@@ -111,7 +122,7 @@
                 <h3 id="project3-heading">Haushaltsplaner</h3>
                 <p><strong>Zielsetzung:</strong> Entwicklung eines Programms zur dynamischen Erfassung und Verwaltung
                     von Einnahmen und Ausgaben.</p>
-                    <hr>
+                <hr>
                 <p>
                     Aus familiärem Anlass arbeite ich derzeit an einem Haushaltsplaner, der sich in seiner Struktur an
                     Excel orientiert und zum effizienten Tracking der Einnahmen und Ausgaben eines Haushaltskontos
@@ -123,34 +134,35 @@
                 </p>
 
             </div>
-        </section> 
+        </section>
 
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Kontakt</h2>
             <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Ihr Name" required>
-            
+
                 <label for="email">E-Mail:</label>
                 <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-            
+
                 <label for="subject">Betreff:</label>
                 <input type="text" id="subject" name="subject" placeholder="Betreff" required>
-            
+
                 <label for="message">Nachricht:</label>
                 <textarea id="message" name="message" placeholder="Ihre Nachricht" required></textarea>
-            
+
                 <button type="submit">Senden</button>
             </form>
         </section>
-        
+
     </main>
 
     <footer>
         <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
         <div>
             <p><a href="#">Datenschutz / noch nicht implementiert </a></p>
-        <p>Derzeit ist diese Seite statisch und nicht in der Lage irgendwelche Daten zu sammeln oder zu speichern.</p>
+            <p>Derzeit ist diese Seite statisch und nicht in der Lage irgendwelche Daten zu sammeln oder zu speichern.
+            </p>
         </div>
     </footer>
 </body>
