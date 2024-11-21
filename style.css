@@ -222,7 +222,7 @@ button:hover {
   background-color: #C1A7E8;
 }
 #Datenschutz{
-  display: none;
+  display: flex;
 }
 
 /* Mobile Ansicht für die Zertifikate */
