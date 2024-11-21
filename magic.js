@@ -39,6 +39,7 @@ window.onload = function() {
 
   
   // Dynamischer Begrüßungstext 
+  //https://lexymirror.netlify.app/?utm_source=direct&utm_medium=personal&utm_campaign=cv_mirror
   const callUp = document.getElementById("Bifrost");
   if (callUp) { 
     if (utmSource === 'github') {
@@ -53,7 +54,10 @@ window.onload = function() {
     } else if (utmSource === 'qr-code') {
       callUp.innerHTML = "Willkommen! Es freut mich besonders, Sie hier zu sehen schließlich sind wir uns bereits persönlich begegnet oder haben zumindest meine Visitenkarte in die Hand. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, mich direkt zu kontaktieren";
       
-    } else {
+    }else if(utmSource === 'datenschutz'){
+      callUp.innerHTML = "Willkommen zurück von der Datenschutzerklärung"
+    }
+     else {
       callUp.innerHTML = "Willkommen, Sie haben mein Portfolio über einen nicht vom mir bekannten Link geöffnet...? Normalerweise wäre hier ein dynamischer Begrüßungstext. Trotzdem schön sie hier begrüßen zu dürfen. Schauen sie sich gerne um, hier finden sie allerlei über mich und meine Kentnisse. Da sie die Seite auf einen weg gefunden haben den ich noch nicht entdeckt habe verrate ich Ihnen ein Geheimniss. <br> Ich liebe es kleine Spielerein in meine Seiten einzubauen, noch sind nicht viele Easter Eggs versteckt aber mit der Zeit werden sich über alle meine Seiten kleine Geschichten entwickeln also immer die Augen offen halten";
       
     }
