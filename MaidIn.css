@@ -1,0 +1,154 @@
+/* Allgemeines Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #FFC1E3, #FFD1E6, #E0BFE6, #C1A7E8);
+  background-size: 400% 400%;
+  animation: backgroundGradient 15s ease infinite;
+  color: #333;
+}
+
+/* Überschriften */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #5B4055;
+  padding: 20px;
+}
+
+h2, h3 {
+  font-weight: 300;
+  color: #5B4055;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Sektionen */
+section {
+  padding: 40px;
+  border-radius: 25px;
+  background-color: rgba(255, 240, 245, 0.8);
+  margin: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+section:hover {
+  background-color: rgba(230, 200, 220, 0.8);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Eingabefelder */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #c48ad5; /* Sanfter Kirschblüten-Ton */
+  box-shadow: 0 0 10px rgba(196, 138, 213, 0.2);
+}
+
+/* Buttons */
+button {
+  background-color: #E0BFE6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #C1A7E8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#butt-pw-notknow{
+  color: white;
+  text-decoration: none;
+}
+#butt-acc-create{
+  color: white;
+  text-decoration: none;
+}
+#Account-creat{
+  background-color: #E0BFE6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+
+}
+
+
+/* Fehlermeldungen */
+#errorMessages {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Bereich für den erfolgreichen Login */
+#Maid {
+  display: none;
+}
+
+#Maid section {
+  background-color: rgba(255, 225, 238, 0.9);
+  text-align: center;
+  border: 2px solid #FFD1E6;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Animation für den Hintergrund */
+@keyframes backgroundGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Medienanfragen für mobile Ansicht */
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}

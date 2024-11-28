@@ -3,33 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="MaidIn.css">
 
 
   <title>Benutzersystem</title>
 </head>
 <body>
+
+  <header>
   <section>  <h1>Benutzersystem</h1> </section>
   <div id="Maid" style="display: none;">
     <section>
       <p id="MaidGreating">Ich bin ein test</p>
     </section>
   </div>
+  </header>
 <section>
   <!-- js logik für nutzer login 1. hard Coded 2.dyn 3.fehlermeldungen 4. nutzer anlegen -->
   <form action="" method="post">
 
     <label for="username">Benutztername:</label><br>
     <input type="text" placeholder="Benutztername" id="username">
+<br><br>
 
+
+<main>
     <label for="mailadress">Email:</label>
     <input type="email" placeholder="email" id="mailadress">
-
+<br><br>
     <label for="pw">Passwort</label>
     <input type="password" placeholder="Passwort" id="pw">
-
+<br><br>
     <button type="submit">Login</button>
   </form>
+  <br>
+  <button ><a href="#" id="butt-pw-notknow">Passwort vergessen</a></button>
+  <br>
+  <Button ><a href="AccountCreat.html" id="butt-acc-create" >Account erstellen</a></Button>
+
   </section>
+</main>
+
+  <footer>
+    <section>
+    <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
+    <div>
+        <p id="Datenschutz"><a href="Datenschutz.html">Datenschutz</a></p>
+        <p id="github-link"><a href="https://github.com/Lexyfy">Git-Hub</a></p>
+        <p id="LinkedIn-link"><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
+        <p id="Index"><a href="Index.html">Homepage</a></p>
+        <p></p>
+        <p><button><a href="LoginSeite.html"></a>Ich bin in Bearbeitung </button>
+        </p>
+    </div>
+    </section>
+</footer>
 </body>
 </html>

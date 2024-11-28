@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Erstellung</title>
+  <link rel="stylesheet" href="MaidIn.css">
+</head>
+
+<body>
+  <header>
+    <section>
+      <h1>Account Erstellung</h1>
+    </section>
+  </header>
+  
+  <!-- Formular für die Registrierung -->
+  <form action="register.php" method="POST">
+    <section>
+      <label for="username">Benutzername:</label>
+      <input type="text" id="username" name="username" placeholder="Benutzername" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" placeholder="E-Mail" required>
+
+      <label for="pw">Passwort:</label>
+      <input type="password" id="pw" name="password" placeholder="Passwort" required>
+      <p><strong>Bitte notieren Sie sich dieses Passwort sicher.</strong></p>
+
+      <label for="pwTry">Passwort wiederholen:</label>
+      <input type="password" id="pwTry" name="password_repeat" placeholder="Passwort wiederholen" required>
+
+      <button type="submit" id="Account-create">Account erstellen</button>
+    </section>
+  </form>
+
+  <footer>
+    <section>
+      <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
+      <div>
+        <p id="Datenschutz"><a href="Datenschutz.html">Datenschutz</a></p>
+        <p id="github-link"><a href="https://github.com/Lexyfy">GitHub</a></p>
+        <p id="LinkedIn-link"><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
+        <p id="Index"><a href="Index.html">Homepage</a></p>
+        <p>
+          <button><a href="LoginSeite.html">Login</a></button>
+        </p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
