@@ -2,13 +2,11 @@
 include 'database.php'; // Verbindung zur Datenbank
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Eingaben aus dem Formular abrufen
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = $_POST['password'];
     $password_repeat = $_POST['password_repeat'];
 
-    // Eingabevalidierung
     if (empty($username) || empty($email) || empty($password) || empty($password_repeat)) {
         die("Bitte füllen Sie alle Felder aus.");
     }
@@ -21,15 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Passwörter stimmen nicht überein.");
     }
 
-    // Passwort verschlüsseln
     $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-    // Benutzer in die Datenbank einfügen
     $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
     if (!$stmt) {
-        die("Fehler bei der Vorbereitung des Statements: " . $conn->error);
+        error_log("Fehler bei der Vorbereitung des Statements: " . $conn->error);
+        die("Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.");
     }
 
     $stmt->bind_param("sss", $username, $email, $hashed_password);
@@ -37,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         echo "Account erfolgreich erstellt!";
     } else {
-        echo "Fehler bei der Erstellung des Accounts: " . $stmt->error;
+        error_log("Fehler bei der Ausführung des Statements: " . $stmt->error);
+        die("Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.");
     }
 
     $stmt->close();
