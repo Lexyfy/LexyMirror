@@ -121,7 +121,7 @@ button:hover {
   display: none;
 }
 .Baustelle{
-  display: none;
+  display: block;
 }
 
 #Maid section {
