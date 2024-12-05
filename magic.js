@@ -1,5 +1,5 @@
-let change = 0; // Variable außerhalb der Funktion definieren
-
+let change = 0; // Variable zum Style-change
+let benutzter;
 function StyleNight() {
   // Hole das Link-Element, das dein CSS-Dokument einbindet
   var link = document.querySelector("link[href='style.css'], link[href='Cyber.css']");
@@ -32,6 +32,21 @@ function xMen() {
 function kleinGroß(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
+function usersystem(){
+  function usersystem() {
+    const elements = document.querySelectorAll(".Baustelle");
+    if (elements.length > 0) {
+      elements.forEach(element => {
+        element.style.display = "block";
+      });
+    } else {
+      console.error("Keine Elemente mit der Klasse 'Baustelle' gefunden.");
+    }
+  }
+  
+}
+
+
 
 window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);

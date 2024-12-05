@@ -48,6 +48,10 @@ nav li {
   margin: 0 15px;
 }
 
+#rainbow-text{
+  display: flex;
+}
+
 #NightC {
   background-color: transparent;
   border: none;
@@ -197,6 +201,9 @@ section {
 /* Hover-Effekt: Der Rest der Seite wird unscharf und dunkler */
 #contact:hover ~ * {
   filter: blur(3px) brightness(0.8);
+}
+.Baustelle{
+  display: none;
 }
 
 
