@@ -203,8 +203,9 @@ section {
   filter: blur(3px) brightness(0.8);
 }
 .Baustelle{
-  display: block;
+  display: none;
 }
+
 
 
 footer {
