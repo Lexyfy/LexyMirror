@@ -64,10 +64,10 @@ window.onload = function() {
       callUp.innerHTML = "Herzlich willkommen! Schön, dass Sie über mein LinkedIn-Profil den Weg hierher gefunden haben. Diese Seite gibt Ihnen einen Einblick in meine Projekte und Fähigkeiten. Ich freue mich auf die Möglichkeit, mit Ihnen in Kontakt zu treten.";
 
     } else if (utmSource === 'direct') {
-      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen. <br> Derzeit bin ich auf der Suche nach einem <strong> unbezahlten Praktikumsplatz für die Prüfung bei der IHK.</strong> <br> Falls dieses Portfolio von mir Ihnen gefällt und sie ein solches Praktikum anbieten würde ich mich sehr freuen wenn Sie mit mir im über das Kontaktformular <a href='#contact'>Hier</a> in Kontakt";
+      callUp.innerHTML = "Willkommen, Sie wurden von Lex direkt eingeladen sich hier umzusehen. <br> Schön Sie hier begrüßen zu dürfen."
 
     } else if (utmSource === 'qr-code') {
-      callUp.innerHTML = "Willkommen! Es freut mich besonders, Sie hier zu sehen schließlich sind wir uns bereits persönlich begegnet oder haben zumindest meine Visitenkarte in die Hand. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, mich direkt zu kontaktieren";
+      callUp.innerHTML = "Willkommen! Es freut mich besonders, Sie hier zu begrüßen zu dürfen schließlich sind wir uns bereits persönlich begegnet. Wenn Sie Fragen oder Anregungen haben, zögern Sie nicht, mich direkt zu kontaktieren";
       
     }else if(utmSource === 'datenschutz'){
       callUp.innerHTML = "Willkommen zurück von der Datenschutzerklärung, Ich hoffe das alles zu Ihrer Zufriedenheit ist. Falls Ihnen irgendeine ungereimtheit aufgefallen ist oder etwas unklar ist stehe ich gern für Rückfragen zur Verfügung"
