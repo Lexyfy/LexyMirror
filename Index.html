@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexyfy Portfolio - Anwendungsentwickler</title>
-    
+
     <!-- Meta-Tags für SEO -->
     <meta name="description" content="Entdecken Sie das Portfolio von Alexander Bahr, einem ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
     <meta name="author" content="Alexander Bahr">
@@ -20,41 +20,33 @@
     <meta property="og:description" content="Erfahren Sie mehr über Lex, einen kreativen und ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
     <meta property="og:url" content="https://lexymirror.netlify.app">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="URL_zu_deinem_Bild.jpg"> <!-- URL des Vorschaubilds -->
-    
+    <meta property="og:image" content="URL_zu_deinem_Bild.jpg">
+
     <!-- Twitter Card Meta-Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lexyfy Portfolio - Anwendungsentwickler">
     <meta name="twitter:description" content="Entdecken Sie Lexyfy's Portfolio und erfahren Sie mehr über Projekte, Fähigkeiten und Kontaktmöglichkeiten.">
-    <meta name="twitter:image" content="URL_zu_deinem_Bild.jpg"> <!-- URL des Vorschaubilds -->
+    <meta name="twitter:image" content="URL_zu_deinem_Bild.jpg">
 
     <!-- Link zum Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- JavaScript-Datei -->
     <script src="magic.js" defer></script>
-
-    
-
 </head>
-
 
 <body>
     <header>
         <div id="StyleKing">
-            <button id="xMen" onclick="xMen()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei
-                Modus</button>
-            <a href="indexEng.html"><button id="language-button" aria-label="Change Language" onclick="">Switch Language
-                    (Englisch)</button></a>
+            <button id="xMen" onclick="xMen()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei Modus</button>
+            <a href="indexEng.html"><button id="language-button" aria-label="Change Language">Switch Language (Englisch)</button></a>
         </div>
         <h1 id="rainbow-text">Alexander Bahr - Anwendungsentwickler</h1>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="#about" aria-label="Gehe zum Abschnitt Über mich">Über mich</a></li>
-                <li><a href="#skills" aria-label="Gehe zum Abschnitt Fähigkeiten">Fähigkeiten</a></li>
-                <li><a href="#projects" aria-label="Gehe zum Abschnitt Projekte">Projekte</a></li>
-                <li><a href="#contact" aria-label="Gehe zum Abschnitt Kontakt">Kontakt</a></li>
-                <li><a href="Lebenslauf.html"  aria-label="Ein Link zu Alexanders Lebenslauf">Lebenslauf</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#usersystem">Benutzersystem</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="Lebenslauf.html">Lebenslauf</a></li>
             </ul>
         </nav>
     </header>
@@ -62,181 +54,86 @@
     <main>
         <section id="welcome-Message">
             <div id="Bifrost"></div>
-            <!-- Grid erstellen um Sätzte nicht zu lang werden zu lassen und evlt links und rechts dinge zu verstecken-->
         </section>
+
         <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading">Über mich</h2>
-            <p>
-                Willkommen auf meiner Portfolio-Seite! Ich bin Lex, ein junger und ambitionierter Programmierer, der
-                derzeit eine Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg in Mühlenbeck
-                absolviert. Mein Ziel ist es, Ende 2025 meinen Abschluss als Fachinformatiker für
-                Anwendungsentwicklung bei der IHK zu erlangen.
-            </p>
-            <p>
-                Als Queere Person bin ich stolz darauf, offen und kreativ zu sein, und ich liebe es, innovative Ideen in
-                die Welt der Softwareentwicklung zu bringen. Meine größten Interessensbereiche sind Datenbanken,
-                Webentwicklung und <button id="NightC" onclick="StyleNight()"
-                    aria-label="Wechselt zwischen Cyber- und Standardmodus">Cyber-Modus</button> Security. Mit
-                Begeisterung
-                und Offenheit gehe ich neue Herausforderungen an und
-                freue mich darauf, kreative und sichere Lösungen umzusetzen.
-            </p>
-            <p>
-                Mein Fokus liegt darauf, kontinuierlich zu lernen und mich weiterzuentwickeln, um in der dynamischen
-                Welt der IT einen wertvollen Beitrag zu leisten.
-            </p>
+            <p>Willkommen auf meiner Portfolio-Seite! Ich bin Lex, ein junger und ambitionierter Programmierer in Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg in Mühlenbeck.</p>
+            <p>Als queere Person bin ich stolz darauf, offen und kreativ zu sein. Meine größten Interessen sind Datenbanken, Webentwicklung und <button id="NightC" onclick="StyleNight()">Cyber-Modus</button> Security.</p>
+            <p>Mein Ziel ist es, Ende 2025 meinen Abschluss als Fachinformatiker für Anwendungsentwicklung zu erlangen und innovative, sichere Softwarelösungen zu entwickeln.</p>
         </section>
 
         <section id="skills" aria-labelledby="skills-heading">
             <h2 id="skills-heading">Fähigkeiten</h2>
             <div class="skills-container">
-                <div class="skills-category" id="frontend-skills" aria-labelledby="frontend-skills-heading">
-                    <h3 id="frontend-skills-heading"> <strong>Front-End</strong></h3>
+                <div class="skills-category" id="frontend-skills">
+                    <h3>Front-End</h3>
                     <ul>
-                        <li>
-                            <p><strong>HTML 5</strong> <br>
-                                Die standardisierte Markup-Sprache für die Struktur und Inhalte moderner Webseiten, die
-                                als Fundament jeder Webanwendung dient. <br></p>
-                        </li>
-
-                        <li>
-                            <p><strong>CSS 3</strong> <br>
-                                Eine leistungsstarke Stylesheet-Sprache, die für die Gestaltung, Formatierung und das
-                                Layout von Webseiten genutzt wird und sie visuell ansprechend macht. <br></p>
-                        </li>
-
-                        <li> <strong>JavaScript</strong> <br>
-                            Eine vielseitige Programmiersprache, die interaktive Funktionen, dynamische Inhalte und
-                            Client-seitige Logik in Webanwendungen ermöglicht. <br>
-                        </li>
+                        <li><strong>HTML5</strong> - Strukturierte Webseiten</li>
+                        <li><strong>CSS3</strong> - Visuelle Gestaltung</li>
+                        <li><strong>JavaScript</strong> - Interaktive Logik</li>
                     </ul>
                 </div>
-
-                <div class="skills-category" id="backend-skills" aria-labelledby="backend-skills-heading">
-                    <h3 id="backend-skills-heading"><strong>Back-End</strong></h3>
+                <div class="skills-category" id="backend-skills">
+                    <h3>Back-End</h3>
                     <ul>
-                        <li>
-                            <p><strong>Java</strong> <br>
-                                Eine objektorientierte, plattformunabhängige Programmiersprache, ideal für komplexe
-                                Anwendungen, Backend-Systeme und mobile Entwicklung.</p>
-                        </li>
-                        <li>
-                            <p> <strong>SQL</strong><br>
-                                Die Schlüsseltechnologie für das Verwalten, Abrufen und Analysieren von Daten in
-                                relationalen 
-                                <bUtton id="usersystem" onclick="usersystem()">Datenbanksystemen.</bUtton>
-                                 
-                                <br></p>
-                        </li>
-                        <li>
-                            <p> <strong>PHP</strong><br>
-                                Eine serverseitige Skriptsprache, die speziell für die Webentwicklung konzipiert wurde
-                                und dynamische, datenbankgestützte Webseiten ermöglicht. <br></p>
-                        </li>
+                        <li><strong>Java</strong> - Objektorientierte Entwicklung</li>
+                        <li><strong>SQL</strong> - Datenbankverwaltung</li>
+                        <li><strong>PHP</strong> - Serverseitige Webentwicklung</li>
                     </ul>
                 </div>
+            </div>
         </section>
+
+        <section id="usersystem" aria-labelledby="usersystem-heading">
+            <h2 id="usersystem-heading">Benutzersystem</h2>
+            <p>Im Rahmen meines Lernprozesses entwickle ich aktuell ein voll funktionsfähiges Benutzersystem. Es bietet u. a. eine sichere Anmeldung mit Passwort-Hashing, 2-Faktor-Authentifizierung (E-Mail & App-basiert), responsives Profilmanagement und Datenbankanbindung mit MongoDB.</p>
+            <p>Das System wird in Node.js mit Express realisiert, verwendet JWTs für sichere Sitzungen und ist modular aufgebaut. Ziel ist ein inklusives, barrierefreies System mit Features wie Gassirouten, Galerie, Freundesliste und individueller Profilgestaltung. Es wird ständig erweitert und dokumentiert.</p>
+            <p>Das Projekt reflektiert mein Bestreben, moderne Webtechnologien praxisnah und benutzerfreundlich zu kombinieren.</p>
+        </section>
+
         <section id="Certificate" aria-labelledby="certificate-heading">
-            <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
-
-                <h2 id="OS-skills-heading">Zertifikate</h2>
-                <div class="certificates-row">
-                    <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
-                    <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
-                    <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
-                    
-                </div>
-                <h4>BS-Zertifikate</h4>
-                <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
-                <img src="spoofing.jpg" alt="OS HackerX Zertifikat" class="certificate">
-                <img src="GatheringInfos_page-0001.jpg" alt="Theorien der Infomationsbeschaffung" class="certificate">
-
+            <h2 id="certificate-heading">Zertifikate</h2>
+            <div class="certificates-row">
+                <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
+                <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
+                <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
             </div>
-        </section>
-
-        <!-- Später sollen die Projekte anklickbar werden um entweder eine neue Seite aufzu rufen oder ein Pop-up Fenster zu öffnen die je aktuelle Screenshots  -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projekte</h2>
-            <div class="project-tile" id="project1" aria-labelledby="project1-heading">
-                <h3 id="project1-heading">DungeonDex</h3>
-                <p><strong>Zielsetzung:</strong> Das DungeonDex verbindet die Welten von Pokémon und Dungeons & Dragons,
-                    um Spielleitern eine umfassende und kreative Datenbank mit Kreaturen und moralischen
-                    Herausforderungen zu bieten.</p>
-                <hr>
-                <p>Das Projekt ermöglicht es, die Welt von Faerûn um friedliche Kreaturen der Kanto-Region zu erweitern
-                    und fördert pazifistische Problemlösungen sowie eine dynamische Verwaltung von Charakterwerten für
-                    D&D-Spieler. Möglicherweise werde ich die Projekte DungeonDex und Fantasy Brawler irgendwann miteinander verbinden doch im derzeitigen stand betrachte ich diese Projekte als kommplett eigene Projekte ohne bezug zu einnander. </p>
-            </div>
-
-
-            <div class="project-tile" id="project2" aria-labelledby="project2-heading">
-                <h3 id="project2-heading">Fantasy Brawler</h3>
-                <p><strong>Zielsetzung:</strong> Ein kleines Textbasiertes Spiel welches sich an den JRPGs der 80s-90s orientiert.
-                </p>
-                <hr>
-                <p>
-                    Ursprünglich eine Übungsaufgabe zur Vererbung in Java welche im Ausmaß immer weiter gewachsen ist
-                    und sich zu einer Vision eines Spieles entwickelt hat welches meine Kreativität und Fähigkeiten wiederspiegeln soll.
-                </p>
-            </div>
-
-            <div class="project-tile" id="project3" aria-labelledby="project3-heading">
-                <h3 id="project3-heading">Haushaltsplaner</h3>
-                <p><strong>Zielsetzung:</strong> Entwicklung eines Programms zur dynamischen Erfassung und Verwaltung
-                    von Einnahmen und Ausgaben.</p>
-                <hr>
-                <p>
-                    Aus familiärem Anlass arbeite ich derzeit an einem Haushaltsplaner, der sich in seiner Struktur an
-                    Excel orientiert und zum effizienten Tracking der Einnahmen und Ausgaben eines Haushaltskontos
-                    geeignet ist. <br>
-                    Der Prototyp wird in Java entwickelt. <br>
-                    Langfristig ist eine plattformübergreifende Anwendung geplant, die unter anderem eine
-                    API-Integration für digitale Belege, eine Scan-Funktion, eine Datenbankanbindung und weitere
-                    Features umfassen soll.
-                </p>
-
-            </div>
+            <h4>BS-Zertifikate</h4>
+            <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
+            <img src="spoofing.jpg" alt="Spoofing Zertifikat" class="certificate">
+            <img src="GatheringInfos_page-0001.jpg" alt="Informationsbeschaffung Zertifikat" class="certificate">
+            <p><strong>Laufende Ausbildungen:</strong> Derzeit absolviere ich das <em>Google Mimo Fullstackentwickler-Zertifikat</em> sowie die <em>Umschulung zum Fachinformatiker für Anwendungsentwicklung (IHK)</em>. Beide Programme sollen spätestens bis zum <strong>27.01.2026</strong> abgeschlossen sein.</p>
         </section>
 
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Kontakt</h2>
             <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                <input type="text" id="name" name="name" required>
 
                 <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="subject">Betreff:</label>
-                <input type="text" id="subject" name="subject" placeholder="Betreff" required>
+                <input type="text" id="subject" name="subject" required>
 
                 <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" placeholder="Ihre Nachricht" required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">Senden</button>
             </form>
         </section>
-
     </main>
 
     <footer>
         <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
-
-        <!-- textdecorationen überarbeiten text sieht noch zu sehr nach Links aus-->
         <div>
             <p id="Datenschutz"><a href="Datenschutz.html">Datenschutz</a></p>
-            <p id="github-link"><a href="https://github.com/Lexyfy">Git-Hub</a></p>
+            <p id="github-link"><a href="https://github.com/Lexyfy">GitHub</a></p>
             <p id="LinkedIn-link"><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
-            <p></p>
-             <p >
-                <button class="Baustelle">
-                    <a href="LoginSeite.html">Baustelle, bitte nicht beachten</a> 
-                </button>
-            </p>
+            <p><button class="Baustelle"><a href="LoginSeite.html">Baustelle, bitte nicht beachten</a></button></p>
         </div>
     </footer>
-
-    
 </body>
-
 </html>
