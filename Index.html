@@ -28,10 +28,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="magic.js" defer></script>
 </head>
+
 <body>
     <header>
-        <div id="StyleKing">
-            <button id="xMen" onclick="xMen()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei Modus</button>
+        <div id="header-actions">
+            <button id="accessibility-toggle" onclick="toggleAccessibility()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei Modus</button>
             <a href="indexEng.html"><button id="language-button" aria-label="Change Language">Switch Language (Englisch)</button></a>
         </div>
         <h1 id="rainbow-text">Alexander Bahr - Anwendungsentwickler</h1>
@@ -45,19 +46,23 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="welcome-Message">
-            <div id="Bifrost"></div>
+        <section id="welcome-message">
+            <div id="welcome-visual"></div>
         </section>
+
         <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading">Über mich</h2>
             <p>Willkommen auf meiner Portfolio-Seite! Ich bin Lex, ein junger und ambitionierter Programmierer in Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg in Mühlenbeck.</p>
-            <p>Als queere Person bin ich stolz darauf, offen und kreativ zu sein. Meine größten Interessen sind Datenbanken, Webentwicklung und <button id="NightC" onclick="StyleNight()">Cyber-</button> Security.</p>
+            <p>Als queere Person bin ich stolz darauf, offen und kreativ zu sein. Meine größten Interessen sind Datenbanken, Webentwicklung und <button id="cybersecurity-focus" onclick="toggleNightMode()">Cyber-</button> Security.</p>
             <p>Mein Ziel ist es, Ende 2025 meinen Abschluss als Fachinformatiker für Anwendungsentwicklung zu erlangen und innovative, sichere Softwarelösungen zu entwickeln.</p>
+        </section>
+
         <section id="skills" aria-labelledby="skills-heading">
             <h2 id="skills-heading">Fähigkeiten</h2>
             <div class="skills-container">
-                <div class="skills-category" id="frontend-skills">
+                <div class="skills-category">
                     <h3>Front-End</h3>
                     <ul>
                         <li><strong>HTML5</strong> - Strukturierte Webseiten</li>
@@ -65,28 +70,40 @@
                         <li><strong>JavaScript</strong> - Interaktive Logik</li>
                     </ul>
                 </div>
-                <div class="skills-category" id="backend-skills">
+                <div class="skills-category">
                     <h3>Back-End</h3>
+                    <ul>
                         <li><strong>Java</strong> - Objektorientierte Entwicklung</li>
                         <li><strong>SQL</strong> - Datenbankverwaltung</li>
                         <li><strong>PHP</strong> - Serverseitige Webentwicklung</li>
+                    </ul>
+                </div>
             </div>
+        </section>
+
         <section id="usersystem" aria-labelledby="usersystem-heading">
             <h2 id="usersystem-heading">Benutzersystem</h2>
             <p>Im Rahmen meines Lernprozesses entwickle ich aktuell ein voll funktionsfähiges Benutzersystem. Es bietet u. a. eine sichere Anmeldung mit Passwort-Hashing, 2-Faktor-Authentifizierung (E-Mail & App-basiert), responsives Profilmanagement und Datenbankanbindung mit MongoDB.</p>
             <p>Das System wird in Node.js mit Express realisiert, verwendet JWTs für sichere Sitzungen und ist modular aufgebaut. Ziel ist ein inklusives, barrierefreies System mit Features wie Gassirouten, Galerie, Freundesliste und individueller Profilgestaltung. Es wird ständig erweitert und dokumentiert.</p>
             <p>Das Projekt reflektiert mein Bestreben, moderne Webtechnologien praxisnah und benutzerfreundlich zu kombinieren.</p>
-        <section id="Certificate" aria-labelledby="certificate-heading">
+        </section>
+
+        <section id="certificate" aria-labelledby="certificate-heading">
             <h2 id="certificate-heading">Zertifikate</h2>
             <div class="certificates-row">
                 <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
                 <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
                 <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
+            </div>
             <h4>BS-Zertifikate</h4>
-            <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
-            <img src="spoofing.jpg" alt="Spoofing Zertifikat" class="certificate">
-            <img src="GatheringInfos_page-0001.jpg" alt="Informationsbeschaffung Zertifikat" class="certificate">
+            <div class="certificates-row">
+                <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
+                <img src="spoofing.jpg" alt="Spoofing Zertifikat" class="certificate">
+                <img src="GatheringInfos_page-0001.jpg" alt="Informationsbeschaffung Zertifikat" class="certificate">
+            </div>
             <p><strong>Laufende Ausbildungen:</strong> Derzeit absolviere ich das <em>Google Mimo Fullstackentwickler-Zertifikat</em> sowie die <em>Umschulung zum Fachinformatiker für Anwendungsentwicklung (IHK)</em>. Beide Programme sollen spätestens bis zum <strong>27.01.2026</strong> abgeschlossen sein.</p>
+        </section>
+
         <section id="contact" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Kontakt</h2>
             <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
@@ -100,14 +117,18 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Senden</button>
             </form>
+        </section>
     </main>
+
     <footer>
         <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
-        <div>
-            <p id="Datenschutz"><a href="Datenschutz.html">Datenschutz</a></p>
-            <p id="github-link"><a href="https://github.com/Lexyfy">GitHub</a></p>
-            <p id="LinkedIn-link"><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
-            <p><button class="Baustelle"><a href="LoginSeite.html">Baustelle, bitte nicht beachten</a></button></p>
+        <div class="footer-links">
+            <p><a href="Datenschutz.html">Datenschutz</a></p>
+            <p><a href="https://github.com/Lexyfy">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
+            <p><a href="LoginSeite.html" class="under-construction">Baustelle, bitte nicht beachten</a></p>
+        </div>
     </footer>
 </body>
+
 </html>

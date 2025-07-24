@@ -1,10 +1,15 @@
+:root {
+  --primary-pink: #FFC1E3;
+  --accent-lilac: #C1A7E8;
+  --soft-purple: #E0BFE6;
+  --hover-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
-/* Allgemeines Styling für einen sanften Look */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, #FFC1E3, #FFD1E6, #E0BFE6, #C1A7E8);
+  background: linear-gradient(-45deg, var(--primary-pink), #FFD1E6, #E0BFE6, var(--accent-lilac));
   background-size: 400% 400%;
   animation: backgroundGradient 15s ease infinite;
   color: #333;
@@ -37,6 +42,12 @@ header {
   border-radius: 0 0 25px 25px;
 }
 
+#header-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -46,39 +57,6 @@ nav ul {
 
 nav li {
   margin: 0 15px;
-}
-
-#rainbow-text{
-  display: flex;
-}
-
-#NightC {
-  background-color: transparent;
-  border: none;
-  color: inherit; /* Passt die Textfarbe an die umgebende Schriftfarbe an */
-  font: inherit; /* Passt die Schriftart und -größe an die umgebende Schrift an */
-  padding: 0; /* Entfernt den Standard-Innenabstand */
-  cursor: pointer;
-}
-
-
-/* Stil für die Zertifikate */
-.certificates-row {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.certificate {
-  width: 30%; /* Passe die Breite der Zertifikate an */
-  max-width: 300px; /* Setzt eine maximale Breite für größere Bildschirme */
-  height: auto; /* Hält das Seitenverhältnis der Bilder bei */
-  margin: 10px; /* Fügt etwas Abstand zwischen den Bildern hinzu */
-}
-
-h4 {
-  text-align: center;
-  margin-top: 20px;
 }
 
 nav a {
@@ -92,6 +70,20 @@ nav a:hover {
   color: #5B4055;
 }
 
+#rainbow-text {
+  display: flex;
+  justify-content: center;
+}
+
+#cybersecurity-focus {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
 section {
   padding: 40px;
   border-radius: 25px;
@@ -100,13 +92,12 @@ section {
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 
-/* Container für Fähigkeiten */
 .skills-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 95%; /* Setzt die Breite des Containers auf 80% */
-  margin: 0 auto; /* Zentriert den Container auf der Seite */
+  width: 95%;
+  margin: 0 auto;
 }
 
 .skills-category {
@@ -120,34 +111,32 @@ section {
 
 .skills-category:hover {
   background-color: #FFD1E6;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--hover-shadow);
 }
 
 .skills-container:hover .skills-category:not(:hover) {
   background-color: rgba(230, 200, 220, 0.8);
 }
 
-/* Geändertes Styling für Projekte */
 .project-tile {
   border-radius: 15px;
   background-color: rgba(245, 215, 235, 0.8);
   padding: 20px;
-  width: 80%; /* Kacheln breiter gemacht */
-  margin: 20px auto; /* Kacheln zentriert */
+  width: 80%;
+  margin: 20px auto;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
 
 .project-tile:hover {
   background-color: #FFD1E6;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--hover-shadow);
 }
 
-/* Styling für den Kontaktbereich */
 #contact {
   padding: 40px;
-  background: linear-gradient(to bottom, #f7d5e8, #eabff1); /* Kirschblüten-Farben */
+  background: linear-gradient(to bottom, #f7d5e8, #eabff1);
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--hover-shadow);
   margin-top: 20px;
   text-align: left;
 }
@@ -161,7 +150,6 @@ section {
 .contact-form label {
   font-weight: bold;
   margin-bottom: 5px;
-  font-family: 'YourPreferredFont', sans-serif;
 }
 
 .contact-form input,
@@ -172,17 +160,17 @@ section {
   font-size: 16px;
   outline: none;
   transition: all 0.3s;
-  font-family: 'YourPreferredFont', sans-serif;
+  font-family: inherit;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #c48ad5; /* Sanfter Kirschblüten-Ton */
+  border-color: #c48ad5;
   box-shadow: 0 0 10px rgba(196, 138, 213, 0.2);
 }
 
 .contact-form button {
-  background-color: #d18bba; /* Knopf in Kirschblüten-Ton */
+  background-color: #d18bba;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -190,23 +178,16 @@ section {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
-  font-family: 'YourPreferredFont', sans-serif;
 }
 
 .contact-form button:hover {
   background-color: #c178a7;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--hover-shadow);
 }
 
-/* Hover-Effekt: Der Rest der Seite wird unscharf und dunkler */
 #contact:hover ~ * {
   filter: blur(3px) brightness(0.8);
 }
-.Baustelle{
-  display: none;
-}
-
-
 
 footer {
   text-align: center;
@@ -215,8 +196,29 @@ footer {
   border-radius: 25px 25px 0 0;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.footer-links a {
+  color: #8A4F7D;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #5B4055;
+}
+
+.under-construction {
+  display: none;
+}
+
 button {
-  background-color: #E0BFE6;
+  background-color: var(--soft-purple);
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -227,27 +229,50 @@ button {
 }
 
 button:hover {
-  background-color: #C1A7E8;
+  background-color: var(--accent-lilac);
 }
-#Datenschutz{
+
+.certificates-row {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-/* Mobile Ansicht für die Zertifikate */
+.certificate {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  margin: 10px;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
-  .certificates-row {
-    flex-direction: column; /* Anordnung der Bilder von horizontal zu vertikal ändern */
-    align-items: center; /* Zentriert die Bilder */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .certificates-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .certificate {
-    width: 80%; /* Vergrößert die Bilder auf mobilen Geräten */
-    max-width: none; /* Entfernt die maximale Breite für kleinere Bildschirme */
-    margin-bottom: 15px; /* Fügt Abstand zwischen den Bildern hinzu */
+    width: 80%;
+    max-width: none;
+    margin-bottom: 15px;
   }
 }
 
-/* Animation für den Hintergrund */
 @keyframes backgroundGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
