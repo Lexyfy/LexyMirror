@@ -1,134 +1,255 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexyfy Portfolio - Anwendungsentwickler</title>
-    <!-- Meta-Tags für SEO -->
-    <meta name="description" content="Entdecken Sie das Portfolio von Alexander Bahr, einem ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
+
+    <title>Lexyfy Portfolio | Anwendungsentwickler</title>
+
+    <meta name="description" content="Portfolio von Alexander Bahr. Vorstellung als Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und moderne Softwareentwicklung.">
     <meta name="author" content="Alexander Bahr">
-    <meta name="keywords" content="Portfolio, Anwendungsentwickler, Programmierer, Webentwicklung, Datenbanken, Cyber Security, Java, HTML, CSS, JavaScript, SQL, PHP, IHK, Praktikum">
+    <meta name="keywords" content="Portfolio, Anwendungsentwickler, Webentwicklung, Java, JavaScript, HTML, CSS, SQL, Softwareentwicklung">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="de">
-    <meta name="revisit-after" content="7 days">
-    <!-- Open Graph Meta-Tags für soziale Medien -->
-    <meta property="og:title" content="Lexyfy Portfolio - Anwendungsentwickler">
-    <meta property="og:description" content="Erfahren Sie mehr über Lex, einen kreativen und ambitionierten Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und Cyber Security.">
+
+    <meta property="og:title" content="Lexyfy Portfolio | Anwendungsentwickler">
+    <meta property="og:description" content="Portfolio von Alexander Bahr mit Projekten, Fähigkeiten und Kontaktmöglichkeiten.">
     <meta property="og:url" content="https://lexymirror.netlify.app">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="URL_zu_deinem_Bild.jpg">
-    <!-- Twitter Card Meta-Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lexyfy Portfolio - Anwendungsentwickler">
-    <meta name="twitter:description" content="Entdecken Sie Lexyfy's Portfolio und erfahren Sie mehr über Projekte, Fähigkeiten und Kontaktmöglichkeiten.">
-    <meta name="twitter:image" content="URL_zu_deinem_Bild.jpg">
-    <!-- Link zum Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <script src="magic.js" defer></script>
-</head>
+    <meta property="og:image" content="res/portfolio-preview.jpg">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lexyfy Portfolio | Anwendungsentwickler">
+    <meta name="twitter:description" content="Portfolio von Alexander Bahr mit Projekten, Fähigkeiten und Kontaktmöglichkeiten.">
+    <meta name="twitter:image" content="res/portfolio-preview.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
 <body>
-    <header>
-        <div id="header-actions">
-            <button id="accessibility-toggle" onclick="toggleAccessibility()" aria-label="Aktiviert den barrierefreien Modus">Barrierefrei Modus</button>
-            <a href="indexEng.html"><button id="language-button" aria-label="Change Language">Switch Language (Englisch)</button></a>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand">
+                <p class="brand-name">Lexyfy</p>
+                <p class="brand-role">Portfolio · Anwendungsentwickler</p>
+            </div>
+
+            <div class="header-actions">
+                <a class="button button-secondary" href="index-en.html" lang="en">English Version</a>
+            </div>
         </div>
-        <h1 id="rainbow-text">Alexander Bahr - Anwendungsentwickler</h1>
-        <nav aria-label="Hauptnavigation">
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-kicker">Portfolio</p>
+                <h1>Alexander Bahr</h1>
+                <p class="hero-subtitle">
+                    Anwendungsentwickler mit Fokus auf strukturierte Webentwicklung,
+                    saubere Softwarelogik und praxisnahe Projekte.
+                </p>
+                <p id="Bifrost" class="hero-message" aria-live="polite">
+                    Willkommen auf meinem Portfolio.
+                </p>
+
+                <div class="hero-links">
+                    <a class="button" href="#projects">Projekte ansehen</a>
+                    <a class="button button-secondary" href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Hauptnavigation">
             <ul>
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#skills">Fähigkeiten</a></li>
-                <li><a href="#usersystem">Benutzersystem</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#certificates">Zertifikate</a></li>
                 <li><a href="#contact">Kontakt</a></li>
-                <li><a href="Lebenslauf.html">Lebenslauf</a></li>
+                <li><a href="lebenslauf.html">Lebenslauf</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="welcome-message">
-            <div id="welcome-visual"></div>
+    <main id="main-content">
+        <section id="about" class="section reveal" aria-labelledby="about-heading">
+            <div class="section-header">
+                <p class="section-kicker">Über mich</p>
+                <h2 id="about-heading">Wer ich bin</h2>
+            </div>
+
+            <div class="content-card">
+                <p>
+                    Willkommen auf meiner Portfolio-Seite. Ich bin Lex und befinde mich in der
+                    Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg.
+                </p>
+                <p>
+                    Besonders interessieren mich strukturierte Webentwicklung, Datenbanken
+                    und die technische Umsetzung klarer, sinnvoller Benutzeroberflächen.
+                </p>
+                <p>
+                    Diese Seite dient als kompakte Übersicht über meinen aktuellen Stand,
+                    meine Fähigkeiten und ausgewählte Projekte.
+                </p>
+            </div>
         </section>
 
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">Über mich</h2>
-            <p>Willkommen auf meiner Portfolio-Seite! Ich bin Lex, ein junger und ambitionierter Programmierer in Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg in Mühlenbeck.</p>
-            <p>Als queere Person bin ich stolz darauf, offen und kreativ zu sein. Meine größten Interessen sind Datenbanken, Webentwicklung und <button id="cybersecurity-focus" onclick="toggleNightMode()">Cyber-</button> Security.</p>
-            <p>Mein Ziel ist es, Ende 2025 meinen Abschluss als Fachinformatiker für Anwendungsentwicklung zu erlangen und innovative, sichere Softwarelösungen zu entwickeln.</p>
-        </section>
+        <section id="skills" class="section reveal" aria-labelledby="skills-heading">
+            <div class="section-header">
+                <p class="section-kicker">Fähigkeiten</p>
+                <h2 id="skills-heading">Technologien und Schwerpunkte</h2>
+            </div>
 
-        <section id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Fähigkeiten</h2>
-            <div class="skills-container">
-                <div class="skills-category">
+            <div class="grid two-columns">
+                <article class="content-card">
                     <h3>Front-End</h3>
-                    <ul>
-                        <li><strong>HTML5</strong> - Strukturierte Webseiten</li>
-                        <li><strong>CSS3</strong> - Visuelle Gestaltung</li>
-                        <li><strong>JavaScript</strong> - Interaktive Logik</li>
+                    <ul class="clean-list">
+                        <li><strong>HTML5</strong> – Strukturierte und semantische Webseiten</li>
+                        <li><strong>CSS3</strong> – Layout, Gestaltung und responsive Oberflächen</li>
+                        <li><strong>JavaScript</strong> – Interaktive Funktionen und DOM-Logik</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h3>Back-End & Logik</h3>
+                    <ul class="clean-list">
+                        <li><strong>Java</strong> – Objektorientierte Programmierung</li>
+                        <li><strong>SQL</strong> – Datenbanken und relationale Datenmodelle</li>
+                        <li><strong>Grundlagen moderner Webanwendungen</strong> – saubere Struktur, Wartbarkeit und Praxisbezug</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal" aria-labelledby="projects-heading">
+            <div class="section-header">
+                <p class="section-kicker">Projekte</p>
+                <h2 id="projects-heading">Aktuelle Arbeiten</h2>
+            </div>
+
+            <div class="grid">
+                <article class="content-card">
+                    <h3>Portfolio-Website</h3>
+                    <p>
+                        Diese Website wird laufend überarbeitet, strukturell verbessert und
+                        als saubere Vorstellungsseite für Bewerbungen und berufliche Kontakte ausgebaut.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Benutzersystem</h3>
+                    <p>
+                        Im Rahmen meines Lernwegs arbeite ich an einem System rund um Anmeldung,
+                        Profilverwaltung und sichere Anwendungslogik. Die technische Ausarbeitung
+                        wird später ausführlicher aufbereitet.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificates" class="section reveal" aria-labelledby="certificates-heading">
+            <div class="section-header">
+                <p class="section-kicker">Zertifikate</p>
+                <h2 id="certificates-heading">Nachweise und Lernfortschritt</h2>
+            </div>
+
+            <div class="certificate-group">
+                <div class="certificate-row">
+                    <img src="res/HTML Mimo_page-0001.jpg" alt="HTML-Zertifikat" class="certificate">
+                    <img src="res/CSS Mimo_page-0001.jpg" alt="CSS-Zertifikat" class="certificate">
+                    <img src="res/SQL Mimo_page-0001.jpg" alt="SQL-Zertifikat" class="certificate">
+                </div>
+            </div>
+
+            <div class="certificate-group">
+                <h3>Weitere Nachweise</h3>
+                <div class="certificate-row">
+                    <img src="res/OS HackerX_page-0001.jpg" alt="Zertifikat zu Betriebssystem-Grundlagen" class="certificate">
+                    <img src="res/spoofing.jpg" alt="Zertifikat zum Thema Spoofing" class="certificate">
+                    <img src="res/GatheringInfos_page-0001.jpg" alt="Zertifikat zur Informationsbeschaffung" class="certificate">
+                </div>
+            </div>
+
+            <div class="content-card">
+                <p>
+                    Weitere Inhalte und Erläuterungen zu Lernwegen, Kursen und praktischen Erfahrungen
+                    werden später noch gezielter ergänzt.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal" aria-labelledby="contact-heading">
+            <div class="section-header">
+                <p class="section-kicker">Kontakt</p>
+                <h2 id="contact-heading">Kontakt aufnehmen</h2>
+            </div>
+
+            <div class="grid two-columns contact-layout">
+                <div class="content-card">
+                    <h3>Direkter Kontakt</h3>
+                    <p>
+                        Für Rückfragen, Austausch oder berufliche Anfragen bin ich über das Formular
+                        oder über meine Profile erreichbar.
+                    </p>
+
+                    <p>
+                        E-Mail:
+                        <button
+                            type="button"
+                            class="inline-button"
+                            data-copy-email="lexbar.developer@gmail.com">
+                            lexbar.developer@gmail.com
+                        </button>
+                    </p>
+                    <p class="copy-feedback" data-copy-feedback aria-live="polite"></p>
+
+                    <ul class="clean-list external-links">
+                        <li><a href="https://github.com/Lexyfy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="lebenslauf.html">Lebenslauf ansehen</a></li>
                     </ul>
                 </div>
-                <div class="skills-category">
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li><strong>Java</strong> - Objektorientierte Entwicklung</li>
-                        <li><strong>SQL</strong> - Datenbankverwaltung</li>
-                        <li><strong>PHP</strong> - Serverseitige Webentwicklung</li>
-                    </ul>
+
+                <div class="content-card">
+                    <h3>Nachricht senden</h3>
+                    <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Nachricht senden</button>
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <section id="usersystem" aria-labelledby="usersystem-heading">
-            <h2 id="usersystem-heading">Benutzersystem</h2>
-            <p>Im Rahmen meines Lernprozesses entwickle ich aktuell ein voll funktionsfähiges Benutzersystem. Es bietet u. a. eine sichere Anmeldung mit Passwort-Hashing, 2-Faktor-Authentifizierung (E-Mail & App-basiert), responsives Profilmanagement und Datenbankanbindung mit MongoDB.</p>
-            <p>Das System wird in Node.js mit Express realisiert, verwendet JWTs für sichere Sitzungen und ist modular aufgebaut. Ziel ist ein inklusives, barrierefreies System mit Features wie Gassirouten, Galerie, Freundesliste und individueller Profilgestaltung. Es wird ständig erweitert und dokumentiert.</p>
-            <p>Das Projekt reflektiert mein Bestreben, moderne Webtechnologien praxisnah und benutzerfreundlich zu kombinieren.</p>
-        </section>
-
-        <section id="certificate" aria-labelledby="certificate-heading">
-            <h2 id="certificate-heading">Zertifikate</h2>
-            <div class="certificates-row">
-                <img src="HTML Mimo_page-0001.jpg" alt="HTML Zertifikat" class="certificate">
-                <img src="CSS Mimo_page-0001.jpg" alt="CSS Zertifikat" class="certificate">
-                <img src="SQL Mimo_page-0001.jpg" alt="SQL Zertifikat" class="certificate">
-            </div>
-            <h4>BS-Zertifikate</h4>
-            <div class="certificates-row">
-                <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Zertifikat" class="certificate">
-                <img src="spoofing.jpg" alt="Spoofing Zertifikat" class="certificate">
-                <img src="GatheringInfos_page-0001.jpg" alt="Informationsbeschaffung Zertifikat" class="certificate">
-            </div>
-            <p><strong>Laufende Ausbildungen:</strong> Derzeit absolviere ich das <em>Google Mimo Fullstackentwickler-Zertifikat</em> sowie die <em>Umschulung zum Fachinformatiker für Anwendungsentwicklung (IHK)</em>. Beide Programme sollen spätestens bis zum <strong>27.01.2026</strong> abgeschlossen sein.</p>
-        </section>
-
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Kontakt</h2>
-            <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="subject">Betreff:</label>
-                <input type="text" id="subject" name="subject" required>
-                <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Senden</button>
-            </form>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Lexyfy. Alle Rechte vorbehalten.</p>
-        <div class="footer-links">
-            <p><a href="Datenschutz.html">Datenschutz</a></p>
-            <p><a href="https://github.com/Lexyfy">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/">LinkedIn</a></p>
-            <p><a href="LoginSeite.html" class="under-construction">Baustelle, bitte nicht beachten</a></p>
-        </div>
+    <footer class="site-footer">
+        <p>© 2026 Lexyfy. Alle Rechte vorbehalten.</p>
+        <nav aria-label="Footer-Navigation">
+            <ul class="footer-links">
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+                <li><a href="https://github.com/Lexyfy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
-
 </html>

@@ -1,189 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexyfy Portfolio</title>
-    <meta name="description" content="Welcome to Lexyfy's Portfolio. Learn more about my skills, projects, and myself.">
-    <link rel="stylesheet" href="style.css">
-    <script src="magic.js"></script>
-</head>
 
+    <title>Lexyfy Portfolio | Application Developer</title>
+
+    <meta name="description" content="Portfolio of Alexander Bahr. Introduction as an application developer with a focus on web development, databases, and modern software development.">
+    <meta name="author" content="Alexander Bahr">
+    <meta name="keywords" content="Portfolio, application developer, web development, Java, JavaScript, HTML, CSS, SQL, software development">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Lexyfy Portfolio | Application Developer">
+    <meta property="og:description" content="Portfolio of Alexander Bahr with projects, skills, and contact information.">
+    <meta property="og:url" content="https://lexymirror.netlify.app">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="res/portfolio-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lexyfy Portfolio | Application Developer">
+    <meta name="twitter:description" content="Portfolio of Alexander Bahr with projects, skills, and contact information.">
+    <meta name="twitter:image" content="res/portfolio-preview.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
 <body>
-    <header>
-        <div id="StyleKing">
-            <button id="xMen" onclick="xMen()">Accessibility-Mode</button>
-            <a href="Index.html"><button id="language-button" aria-label="Change Language" onclick="">Sprache wechseln
-                    (deutsch)</button></a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand">
+                <p class="brand-name">Lexyfy</p>
+                <p class="brand-role">Portfolio · Application Developer</p>
+            </div>
+
+            <div class="header-actions">
+                <a class="button button-secondary" href="index.html">Deutsche Version</a>
+            </div>
         </div>
-        <h1>Alexander Bahr - Softwaredeveloper</h1>
-        <nav aria-label="Main Navigation">
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-kicker">Portfolio</p>
+                <h1>Alexander Bahr</h1>
+                <p class="hero-subtitle">
+                    Application developer with a focus on structured web development,
+                    clean software logic, and practical projects.
+                </p>
+                <p id="Bifrost" class="hero-message" aria-live="polite">
+                    Welcome to my portfolio.
+                </p>
+
+                <div class="hero-links">
+                    <a class="button" href="#projects">View Projects</a>
+                    <a class="button button-secondary" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="lebenslauf.html">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- dynamic Greating-->
-        <section id="Heimdal">
-            <div id="Bifrost"></div>
-        </section>
-        <section id="about" aria-labelledby="about-heading">
-            <h2 id="about-heading">About Me</h2>
-            <p>
-                <!-- add Grid to set sentence widht -->
-                Welcome to my portfolio page! I'm Lex, a young and ambitious programmer currently undergoing retraining
-                as an application developer at the Vocational Support Center Berlin-Brandenburg in Mühlenbeck. My goal
-                is to complete my training as an IT specialist in application development at the IHK by the end of 2025.
-            </p>
-            <p>
-                As a queer individual, I am proud to be open and creative, and I love bringing innovative ideas into the
-                world of software development. My main interests are databases, web development, and <button id="NightC"
-                    onclick="StyleNight()">cyber</button> security. With enthusiasm and openness, I take on new
-                challenges and look forward to implementing creative and secure solutions.
-            </p>
-            <p>
-                My focus is on continuously learning and developing to make a valuable contribution in the dynamic world
-                of IT.
-            </p>
-        </section>
-
-        <section id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading">Skills and Certificates</h2>
-            <div class="skills-container">
-                <div class="skills-category" id="frontend-skills" aria-labelledby="frontend-skills-heading">
-                    <h3 id="frontend-skills-heading">Front-End</h3>
-                    <ul>
-                        <!-- add Describtions -->
-                        <li>
-                            <p><strong> HTML 5</strong> <br>
-                                The standardized markup language for structuring and presenting content on modern
-                                websites, serving as the foundation of any web application.<br>
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>CSS 3</strong> <br>
-                                A powerful stylesheet language used for designing, formatting, and laying out web pages,
-                                making them visually appealing. <br>
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>JavaScript</strong><br>
-                                A versatile programming language that enables interactive features, dynamic content, and
-                                client-side logic in web applications. <br>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills-category" id="backend-skills" aria-labelledby="backend-skills-heading">
-                    <h3 id="backend-skills-heading">Back-End</h3>
-                    <ul>
-                        <li>
-                            <p><strong>Java</strong><br>
-                                An object-oriented, platform-independent programming language, ideal for complex
-                                applications, backend systems, and mobile development. <br>
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>SQL</strong><br>
-                                The key technology for managing, retrieving, and analyzing data in relational database
-                                systems. <br>
-                            </p>
-                        </li>
-                        <li>
-                            <p><strong>PHP</strong><br>
-                                A server-side scripting language specifically designed for web development, enabling
-                                dynamic and database-driven websites. <br>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="skills-category" id="OS-category" aria-labelledby="OS-skills-heading">
-                    <!-- Make view responsive -->
-                    <h3 id="OS-skills-heading">Additional Certificates</h3>
-                    <div class="certificates-row">
-                        <img src="HTML Mimo_page-0001.jpg" alt="HTML Certificate" class="certificate">
-                        <img src="CSS Mimo_page-0001.jpg" alt="CSS Certificate" class="certificate">
-                        <img src="SQL Mimo_page-0001.jpg" alt="SQL Certificate" class="certificate">
-                    </div>
-                    <h4>OS Certificates</h4>
-                    <img src="OS HackerX_page-0001.jpg" alt="OS HackerX Certificate" class="certificate">
-                    <img src="spoofing.jpg" alt="OS HackerX Certificate" class="certificate"> 
-                    <img src="GatheringInfos_page-0001.jpg" alt="Theories of gathering importent Infomations">
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects will be clickable later to either open a new page or display a popup window with screenshots -->
-        <section id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading">Projects</h2>
-            <div class="project-tile" id="project1" aria-labelledby="project1-heading">
-                <h3 id="project1-heading">DungeonDex</h3>
-                <p><strong>Objective:</strong> DungeonDex connects the worlds of Pokémon and Dungeons & Dragons to offer
-                    game masters a comprehensive and creative database of creatures and moral challenges.</p>
-                <hr>
-                <p>The project allows expanding the world of Faerûn with peaceful creatures from the Kanto region,
-                    promoting pacifistic problem-solving and offering a dynamic management system for D&D player
-                    character values.</p>
+    <main id="main-content">
+        <section id="about" class="section reveal" aria-labelledby="about-heading">
+            <div class="section-header">
+                <p class="section-kicker">About</p>
+                <h2 id="about-heading">Who I am</h2>
             </div>
 
-            <div class="project-tile" id="project2" aria-labelledby="project2-heading">
-                <h3 id="project2-heading">Fantasy Brawler</h3>
-                <p><strong>Objective:</strong> A small text-based combat system inspired by Pokémon.</p>
-                <hr>
+            <div class="content-card">
                 <p>
-                    Originally an exercise in inheritance in Java, it grew in scope and evolved into a vision of a small
-                    game.
+                    Welcome to my portfolio website. I am Lex and currently undergoing retraining
+                    as an application developer at the Vocational Support Center Berlin-Brandenburg.
                 </p>
-            </div>
-
-            <div class="project-tile" id="project3" aria-labelledby="project3-heading">
-                <h3 id="project3-heading">Household Planner</h3>
-                <p><strong>Objective:</strong> Development of a program for the dynamic recording and management of
-                    income and expenses.</p>
-                <hr>
                 <p>
-                    Due to family reasons, I am currently working on a household planner, structured similarly to Excel,
-                    suitable for efficiently tracking a household account's income and expenses. <br>
-                    The prototype is being developed in Java. <br>
-                    In the long term, a cross-platform application is planned, featuring API integration for digital
-                    receipts, a scanning function, database connectivity, and more.
+                    I am especially interested in structured web development, databases,
+                    and the technical implementation of clear and meaningful user interfaces.
+                </p>
+                <p>
+                    This website serves as a compact overview of my current development,
+                    my skills, and selected projects.
                 </p>
             </div>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact</h2>
-            <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <section id="skills" class="section reveal" aria-labelledby="skills-heading">
+            <div class="section-header">
+                <p class="section-kicker">Skills</p>
+                <h2 id="skills-heading">Technologies and focus areas</h2>
+            </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <div class="grid two-columns">
+                <article class="content-card">
+                    <h3>Front-End</h3>
+                    <ul class="clean-list">
+                        <li><strong>HTML5</strong> – Structured and semantic websites</li>
+                        <li><strong>CSS3</strong> – Layout, styling, and responsive interfaces</li>
+                        <li><strong>JavaScript</strong> – Interactive features and DOM logic</li>
+                    </ul>
+                </article>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <article class="content-card">
+                    <h3>Back-End & Logic</h3>
+                    <ul class="clean-list">
+                        <li><strong>Java</strong> – Object-oriented programming</li>
+                        <li><strong>SQL</strong> – Databases and relational data models</li>
+                        <li><strong>Modern web application basics</strong> – clean structure, maintainability, and practical implementation</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <section id="projects" class="section reveal" aria-labelledby="projects-heading">
+            <div class="section-header">
+                <p class="section-kicker">Projects</p>
+                <h2 id="projects-heading">Current work</h2>
+            </div>
 
-                <button type="submit">Send</button>
-            </form>
+            <div class="grid">
+                <article class="content-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        This website is continuously being improved, structurally refined,
+                        and expanded into a clean presentation page for applications and professional contacts.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>User System</h3>
+                    <p>
+                        As part of my learning journey, I am working on a system around authentication,
+                        profile management, and secure application logic. The technical implementation
+                        will be documented in more detail later.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="certificates" class="section reveal" aria-labelledby="certificates-heading">
+            <div class="section-header">
+                <p class="section-kicker">Certificates</p>
+                <h2 id="certificates-heading">Proof of learning and progress</h2>
+            </div>
+
+            <div class="certificate-group">
+                <div class="certificate-row">
+                    <img src="res/HTML Mimo_page-0001.jpg" alt="HTML certificate" class="certificate">
+                    <img src="res/CSS Mimo_page-0001.jpg" alt="CSS certificate" class="certificate">
+                    <img src="res/SQL Mimo_page-0001.jpg" alt="SQL certificate" class="certificate">
+                </div>
+            </div>
+
+            <div class="certificate-group">
+                <h3>Additional certificates</h3>
+                <div class="certificate-row">
+                    <img src="res/OS HackerX_page-0001.jpg" alt="Certificate for operating system fundamentals" class="certificate">
+                    <img src="res/spoofing.jpg" alt="Certificate related to spoofing" class="certificate">
+                    <img src="res/GatheringInfos_page-0001.jpg" alt="Certificate related to information gathering" class="certificate">
+                </div>
+            </div>
+
+            <div class="content-card">
+                <p>
+                    More detailed explanations of courses, practical learning progress,
+                    and technical background will be added later.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal" aria-labelledby="contact-heading">
+            <div class="section-header">
+                <p class="section-kicker">Contact</p>
+                <h2 id="contact-heading">Get in touch</h2>
+            </div>
+
+            <div class="grid two-columns contact-layout">
+                <div class="content-card">
+                    <h3>Direct contact</h3>
+                    <p>
+                        For questions, professional exchange, or job-related inquiries,
+                        you can reach me through the form or through my profiles.
+                    </p>
+
+                    <p>
+                        E-mail:
+                        <button
+                            type="button"
+                            class="inline-button"
+                            data-copy-email="lexbar.developer@gmail.com">
+                            lexbar.developer@gmail.com
+                        </button>
+                    </p>
+                    <p class="copy-feedback" data-copy-feedback aria-live="polite"></p>
+
+                    <ul class="clean-list external-links">
+                        <li><a href="https://github.com/Lexyfy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="lebenslauf.html">View resume</a></li>
+                    </ul>
+                </div>
+
+                <div class="content-card">
+                    <h3>Send a message</h3>
+                    <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Send message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2024 Lexyfy. All rights reserved.</p>
-        <!--Data sycurity-->
+    <footer class="site-footer">
+        <p>© 2026 Lexyfy. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul class="footer-links">
+                <li><a href="datenschutz.html">Privacy Policy</a></li>
+                <li><a href="https://github.com/Lexyfy" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alexander-bahr-8874052b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
-
 </html>

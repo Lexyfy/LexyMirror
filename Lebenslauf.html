@@ -2,69 +2,183 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf - Alexander Bahr</title>
-    <link rel="stylesheet" href="style.css"> <!-- Optional: Für externe CSS-Datei -->
+
+    <title>Lebenslauf | Alexander Bahr</title>
+
+    <meta name="description" content="Lebenslauf von Alexander Bahr mit beruflichem Werdegang, Ausbildung, Sprachkenntnissen und Kompetenzen.">
+    <meta name="author" content="Alexander Bahr">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Alexander Bahr</h1>
-        <p>Fichtenzeisigweg 7 13129 Berlin | lexbar.developer@gmail.com | 017661798948</p>
-        <p>Geboren am 04.09.1996 | Führerschein: Klasse B/A1 | Familienstand: ledig</p>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand">
+                <p class="brand-name">Lexyfy</p>
+                <p class="brand-role">Lebenslauf · Anwendungsentwickler</p>
+            </div>
+
+            <div class="header-actions">
+                <a class="button button-secondary" href="index.html">Zurück zum Portfolio</a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-kicker">Lebenslauf</p>
+                <h1>Alexander Bahr</h1>
+                <p class="hero-subtitle">
+                    Übersicht über meinen beruflichen Werdegang, meine Ausbildung,
+                    Sprachkenntnisse und grundlegenden Kompetenzen.
+                </p>
+            </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Seitennavigation Lebenslauf">
+            <ul>
+                <li><a href="#profile">Profil</a></li>
+                <li><a href="#experience">Berufserfahrung</a></li>
+                <li><a href="#education">Ausbildung</a></li>
+                <li><a href="#languages">Sprachen</a></li>
+                <li><a href="#skills">Kompetenzen</a></li>
+                <li><a href="#interests">Interessen</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Berufserfahrung</h2>
-            <ul>
-                <li>
-                    <strong>Physio Company | Berlin</strong> (11/2017 - 11/2023)<br>
-                    Ergotherapeut<br>
-                    <ul>
-                        <li>Durchführen von Therapieübungen und -aktivitäten.</li>
-                        <li>Beraten und Schulen von Patienten.</li>
-                        <li>Festlegen von Behandlungszielen und Ausarbeiten von Behandlungsplänen.</li>
-                        <li>Enges Zusammenarbeiten mit Kollegen, um Krankheitsfälle zu besprechen und geeignete Therapien festzulegen.</li>
+
+    <main id="main-content">
+        <section id="profile" class="section reveal" aria-labelledby="profile-heading">
+            <div class="section-header">
+                <p class="section-kicker">Profil</p>
+                <h2 id="profile-heading">Persönliche Daten</h2>
+            </div>
+
+            <div class="content-card">
+                <ul class="clean-list">
+                    <li><strong>Name:</strong> Alexander Bahr</li>
+                    <li><strong>Ort:</strong> Berlin</li>
+                    <li><strong>E-Mail:</strong> lexbar.developer@gmail.com</li>
+                    <li><strong>Telefon:</strong> 017661798948</li>
+                    <li><strong>Geburtsdatum:</strong> 04.09.1996</li>
+                    <li><strong>Führerschein:</strong> Klasse B / A1</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal" aria-labelledby="experience-heading">
+            <div class="section-header">
+                <p class="section-kicker">Berufserfahrung</p>
+                <h2 id="experience-heading">Beruflicher Werdegang</h2>
+            </div>
+
+            <div class="grid">
+                <article class="content-card">
+                    <h3>Physio Company · Berlin</h3>
+                    <p><strong>Ergotherapeut</strong> · 11/2017 – 11/2023</p>
+                    <ul class="clean-list">
+                        <li>Durchführung therapeutischer Übungen und begleitender Maßnahmen</li>
+                        <li>Beratung und Schulung von Patientinnen und Patienten</li>
+                        <li>Festlegung von Behandlungszielen und Erstellung von Behandlungsplänen</li>
+                        <li>Zusammenarbeit im Team zur Abstimmung geeigneter Therapieansätze</li>
                     </ul>
-                </li>
-                <li>
-                    <strong>Charité | Berlin</strong> (03/2017 - 10/2017)<br>
-                    Ergotherapeut
-                </li>
-            </ul>
+                </article>
+
+                <article class="content-card">
+                    <h3>Charité · Berlin</h3>
+                    <p><strong>Ergotherapeut</strong> · 03/2017 – 10/2017</p>
+                    <p>
+                        Tätigkeit im therapeutischen Umfeld mit Schwerpunkt auf Betreuung,
+                        Behandlung und interdisziplinärer Zusammenarbeit.
+                    </p>
+                </article>
+            </div>
         </section>
-        <section>
-            <h2>Ausbildung</h2>
-            <p><strong>Berufsförderungswerk Berlin-Brandenburg| (01-2024 - Aktuell)</strong></p>
-            <p><strong>Akademie der Gesundheit | Berlin, Buch</strong> (09/2013 – 09/2016)<br>
-            Bachelor of Science<br>
-            Notendurchschnitt: 2,7</p>
+
+        <section id="education" class="section reveal" aria-labelledby="education-heading">
+            <div class="section-header">
+                <p class="section-kicker">Ausbildung</p>
+                <h2 id="education-heading">Ausbildungsweg</h2>
+            </div>
+
+            <div class="grid">
+                <article class="content-card">
+                    <h3>Berufsförderungswerk Berlin-Brandenburg</h3>
+                    <p><strong>Umschulung zum Anwendungsentwickler</strong> · seit 01/2024</p>
+                    <p>
+                        Aktuelle fachliche Ausrichtung mit Fokus auf Softwareentwicklung,
+                        Webtechnologien und technische Praxis.
+                    </p>
+                </article>
+
+                <article class="content-card">
+                    <h3>Akademie der Gesundheit · Berlin-Buch</h3>
+                    <p><strong>Bachelor of Science</strong> · 09/2013 – 09/2016</p>
+                    <p>Notendurchschnitt: 2,7</p>
+                </article>
+            </div>
         </section>
-        <section>
-            <h2>Sprachen</h2>
-            <ul>
-                <li>Deutsch: Muttersprache</li>
-                <li>Englisch: Fortgeschrittene Kenntnisse (C1)</li>
-            </ul>
+
+        <section id="languages" class="section reveal" aria-labelledby="languages-heading">
+            <div class="section-header">
+                <p class="section-kicker">Sprachen</p>
+                <h2 id="languages-heading">Sprachkenntnisse</h2>
+            </div>
+
+            <div class="content-card">
+                <ul class="clean-list">
+                    <li><strong>Deutsch:</strong> Muttersprache</li>
+                    <li><strong>Englisch:</strong> Fortgeschrittene Kenntnisse (C1)</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>Kompetenzen</h2>
-            <ul>
-                <li>Verantwortungsbewusstsein</li>
-                <li>Gestalterische Fähigkeiten</li>
-                <li>Diagnosefähigkeiten</li>
-                <li>Dokumentationsfähigkeiten</li>
-            </ul>
+
+        <section id="skills" class="section reveal" aria-labelledby="skills-heading">
+            <div class="section-header">
+                <p class="section-kicker">Kompetenzen</p>
+                <h2 id="skills-heading">Stärken und Fähigkeiten</h2>
+            </div>
+
+            <div class="content-card">
+                <ul class="clean-list">
+                    <li>Verantwortungsbewusstsein</li>
+                    <li>Strukturiertes Arbeiten</li>
+                    <li>Dokumentationsfähigkeit</li>
+                    <li>Teamorientierte Zusammenarbeit</li>
+                    <li>Gestalterisches und analytisches Denken</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>Hobbys</h2>
-            <ul>
-                <li>Ehrenamtlicher Rettungsdienst im "Arbeiter-Samariter-Bund" (Wasserrettung, Katastrophenschutz, Ressourcenmanagement)</li>
-                <li>Planen und Bereitstellen von teambasierten Events, die Kommunikation, kreatives Problemlösen und Zeitmanagement erfordern</li>
-            </ul>
+
+        <section id="interests" class="section reveal" aria-labelledby="interests-heading">
+            <div class="section-header">
+                <p class="section-kicker">Interessen</p>
+                <h2 id="interests-heading">Engagement und persönliche Interessen</h2>
+            </div>
+
+            <div class="content-card">
+                <ul class="clean-list">
+                    <li>Ehrenamtlicher Rettungsdienst im Arbeiter-Samariter-Bund mit Bezug zu Wasserrettung, Katastrophenschutz und Ressourcenmanagement</li>
+                    <li>Planung und Durchführung teambasierter Events mit Fokus auf Kommunikation, Organisation und kreatives Problemlösen</li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>© Alexander Bahr, Berlin - 13.04.2023</p>
+
+    <footer class="site-footer">
+        <p>© 2026 Alexander Bahr</p>
+        <nav aria-label="Footer-Navigation">
+            <ul class="footer-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+                <li><a href="index-en.html">English Version</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
