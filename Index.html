@@ -7,9 +7,9 @@
 
     <title>Lexyfy Portfolio | Anwendungsentwickler</title>
 
-    <meta name="description" content="Portfolio von Alexander Bahr. Vorstellung als Anwendungsentwickler mit Fokus auf Webentwicklung, Datenbanken und moderne Softwareentwicklung.">
+    <meta name="description" content="Portfolio von Alexander Bahr. Vorstellung als Anwendungsentwickler mit Fokus auf Webentwicklung, sichere Anwendungslogik und strukturierte Softwareentwicklung.">
     <meta name="author" content="Alexander Bahr">
-    <meta name="keywords" content="Portfolio, Anwendungsentwickler, Webentwicklung, Java, JavaScript, HTML, CSS, SQL, Softwareentwicklung">
+    <meta name="keywords" content="Portfolio, Anwendungsentwickler, Webentwicklung, JavaScript, Node.js, Express, MongoDB, Java, SQL, Softwareentwicklung">
     <meta name="robots" content="index, follow">
 
     <meta property="og:title" content="Lexyfy Portfolio | Anwendungsentwickler">
@@ -37,7 +37,7 @@
             </div>
 
             <div class="header-actions">
-                <a class="button button-secondary" href="indexEng.html" lang="en">English Version</a>
+                <a class="button button-secondary" href="index-en.html" lang="en">English Version</a>
             </div>
         </div>
 
@@ -46,15 +46,15 @@
                 <p class="hero-kicker">Portfolio</p>
                 <h1>Alexander Bahr</h1>
                 <p class="hero-subtitle">
-                    Anwendungsentwickler mit Fokus auf strukturierte Webentwicklung,
-                    saubere Softwarelogik und praxisnahe Projekte.
+                    Angehender Anwendungsentwickler mit Fokus auf strukturierte Webentwicklung,
+                    sichere Anwendungslogik und praxisnahe Softwareprojekte.
                 </p>
                 <p id="Bifrost" class="hero-message" aria-live="polite">
                     Willkommen auf meinem Portfolio.
                 </p>
 
                 <div class="hero-links">
-                    <a class="button" href="#projects">Projekte ansehen</a>
+                    <a class="button" href="#projects">Vorzeigeprojekt ansehen</a>
                     <a class="button button-secondary" href="#contact">Kontakt</a>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             <ul>
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#skills">Fähigkeiten</a></li>
-                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#projects">Projekt</a></li>
                 <li><a href="#certificates">Zertifikate</a></li>
                 <li><a href="#contact">Kontakt</a></li>
                 <li><a href="lebenslauf.html">Lebenslauf</a></li>
@@ -81,16 +81,18 @@
 
             <div class="content-card">
                 <p>
-                    Willkommen auf meiner Portfolio-Seite. Ich bin Lex und befinde mich in der
-                    Umschulung zum Anwendungsentwickler im Berufsförderwerk Berlin-Brandenburg.
+                    Ich bin angehender Anwendungsentwickler und befinde mich derzeit in der
+                    Umschulung im Berufsförderwerk Berlin-Brandenburg.
                 </p>
                 <p>
-                    Besonders interessieren mich strukturierte Webentwicklung, Datenbanken
-                    und die technische Umsetzung klarer, sinnvoller Benutzeroberflächen.
+                    Besonders interessieren mich strukturierte Webentwicklung, Datenbanken,
+                    Authentifizierungsprozesse und die saubere technische Umsetzung von Anwendungen.
                 </p>
                 <p>
-                    Diese Seite dient als kompakte Übersicht über meinen aktuellen Stand,
-                    meine Fähigkeiten und ausgewählte Projekte.
+                    Mein Anspruch ist es, Lösungen nicht nur funktional umzusetzen, sondern sie
+                    nachvollziehbar, wartbar und praxisnah zu entwickeln. Diese Portfolio-Seite
+                    gibt einen kompakten Überblick über meinen aktuellen Entwicklungsstand,
+                    meine Schwerpunkte und mein zentrales IHK-Projekt.
                 </p>
             </div>
         </section>
@@ -105,18 +107,19 @@
                 <article class="content-card">
                     <h3>Front-End</h3>
                     <ul class="clean-list">
-                        <li><strong>HTML5</strong> – Strukturierte und semantische Webseiten</li>
-                        <li><strong>CSS3</strong> – Layout, Gestaltung und responsive Oberflächen</li>
-                        <li><strong>JavaScript</strong> – Interaktive Funktionen und DOM-Logik</li>
+                        <li><strong>HTML5</strong> – semantische und strukturierte Webseiten</li>
+                        <li><strong>CSS3</strong> – responsive Layouts und klare Oberflächen</li>
+                        <li><strong>JavaScript</strong> – Interaktionen, DOM-Logik und Benutzerführung</li>
                     </ul>
                 </article>
 
                 <article class="content-card">
-                    <h3>Back-End & Logik</h3>
+                    <h3>Back-End & Daten</h3>
                     <ul class="clean-list">
-                        <li><strong>Java</strong> – Objektorientierte Programmierung</li>
-                        <li><strong>SQL</strong> – Datenbanken und relationale Datenmodelle</li>
-                        <li><strong>Grundlagen moderner Webanwendungen</strong> – saubere Struktur, Wartbarkeit und Praxisbezug</li>
+                        <li><strong>Node.js & Express</strong> – Backend-Struktur und API-Logik</li>
+                        <li><strong>MongoDB</strong> – Datenmodellierung und Nutzerdatenverwaltung</li>
+                        <li><strong>JWT & 2FA</strong> – sichere Sitzungen und Authentifizierungslogik</li>
+                        <li><strong>Java & SQL</strong> – objektorientierte Logik und relationale Datenbanken</li>
                     </ul>
                 </article>
             </div>
@@ -125,24 +128,49 @@
         <section id="projects" class="section reveal" aria-labelledby="projects-heading">
             <div class="section-header">
                 <p class="section-kicker">Projekte</p>
-                <h2 id="projects-heading">Aktuelle Arbeiten</h2>
+                <h2 id="projects-heading">Vorzeigeprojekt</h2>
             </div>
 
             <div class="grid">
                 <article class="content-card">
-                    <h3>Portfolio-Website</h3>
+                    <h3>IHK-Projekt: Sicheres Benutzersystem</h3>
                     <p>
-                        Diese Website wird laufend überarbeitet, strukturell verbessert und
-                        als saubere Vorstellungsseite für Bewerbungen und berufliche Kontakte ausgebaut.
+                        Mein zentrales Vorzeigeprojekt ist ein im Rahmen meiner IHK-Abschlussphase
+                        entwickeltes Benutzersystem mit Fokus auf Sicherheit, Struktur und praktischer
+                        Anwendbarkeit.
+                    </p>
+                    <p>
+                        Der Schwerpunkt lag auf einer sicheren Authentifizierung mit Passwort-Hashing,
+                        Zwei-Faktor-Authentifizierung per E-Mail und App, JWT-basierten Sitzungen
+                        sowie einer klar modularen Backend-Struktur.
+                    </p>
+                    <p>
+                        Ziel war es, nicht nur eine funktionierende Anmeldung zu entwickeln,
+                        sondern ein erweiterbares System, das technisch nachvollziehbar,
+                        sauber dokumentiert und praxisnah einsetzbar ist.
                     </p>
                 </article>
 
                 <article class="content-card">
-                    <h3>Benutzersystem</h3>
+                    <h3>Technischer Fokus</h3>
+                    <ul class="clean-list">
+                        <li><strong>Back-End:</strong> Node.js, Express und modulare Routen- und Middleware-Struktur</li>
+                        <li><strong>Sicherheit:</strong> Passwort-Hashing, Zwei-Faktor-Authentifizierung und Validierung</li>
+                        <li><strong>Sitzungslogik:</strong> JWT-basierte Authentifizierung</li>
+                        <li><strong>Datenbank:</strong> MongoDB zur Verwaltung von Nutzerdaten und Systemlogik</li>
+                    </ul>
+                </article>
+
+                <article class="content-card">
+                    <h3>Bedeutung für mein Portfolio</h3>
                     <p>
-                        Im Rahmen meines Lernwegs arbeite ich an einem System rund um Anmeldung,
-                        Profilverwaltung und sichere Anwendungslogik. Die technische Ausarbeitung
-                        wird später ausführlicher aufbereitet.
+                        Dieses Projekt ist aktuell mein aussagekräftigstes Beispiel dafür,
+                        wie ich technische Anforderungen, Sicherheitsaspekte und saubere Struktur
+                        in einem realen Entwicklungskontext zusammenführe.
+                    </p>
+                    <p>
+                        Es ersetzt bewusst ältere Mini-Projekte als Schwerpunkt meines Portfolios,
+                        weil es meinen aktuellen Stand wesentlich besser repräsentiert.
                     </p>
                 </article>
             </div>
@@ -173,8 +201,8 @@
 
             <div class="content-card">
                 <p>
-                    Weitere Inhalte und Erläuterungen zu Lernwegen, Kursen und praktischen Erfahrungen
-                    werden später noch gezielter ergänzt.
+                    Diese Nachweise ergänzen meinen Lernweg und dokumentieren Bereiche,
+                    in denen ich mir zusätzlich praktische und theoretische Grundlagen erarbeitet habe.
                 </p>
             </div>
         </section>
@@ -189,8 +217,8 @@
                 <div class="content-card">
                     <h3>Direkter Kontakt</h3>
                     <p>
-                        Für Rückfragen, Austausch oder berufliche Anfragen bin ich über das Formular
-                        oder über meine Profile erreichbar.
+                        Für Rückfragen, beruflichen Austausch oder Bewerbungsanfragen
+                        bin ich über das Formular oder über meine Profile erreichbar.
                     </p>
 
                     <p>
