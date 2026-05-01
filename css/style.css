@@ -344,14 +344,14 @@ main {
 
 .certificate-row {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
 .certificate {
     width: 100%;
     aspect-ratio: 4 / 3;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
@@ -465,8 +465,7 @@ main {
 }
 
 @media (max-width: 900px) {
-    .grid.two-columns,
-    .certificate-row {
+    .grid.two-columns {
         grid-template-columns: 1fr;
     }
 
@@ -484,11 +483,6 @@ main {
     .section,
     .site-footer {
         width: min(calc(100% - 1rem), var(--container));
-    }
-
-    .site-header,
-    .section,
-    .site-footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -520,5 +514,21 @@ main {
     .hero-links,
     .header-actions {
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 }

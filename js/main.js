@@ -101,7 +101,7 @@ function enableCopyEmail() {
                 feedback.textContent = "E-Mail kopiert.";
                 feedback.classList.add("show");
 
-                window.setTimeout(() => {
+                setTimeout(() => {
                     feedback.classList.remove("show");
                 }, 2000);
             }

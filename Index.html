@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%238a4f7d'/><text x='16' y='24' font-size='22' fill='white' font-family='sans-serif' font-weight='700' text-anchor='middle'>L</text></svg>">
 
     <title>Lexyfy Portfolio | Anwendungsentwickler</title>
 
@@ -184,19 +185,19 @@
 
             <div class="certificate-group">
                 <div class="certificate-row">
-                    <img src="res/Fullstack Zertifikat.jpeg" alt="Fullstack-Zertifikat" class="certificate">
-                    <img src="res/HTML Mimo_page-0001.jpg" alt="HTML-Zertifikat" class="certificate">
-                    <img src="res/CSS Mimo_page-0001.jpg" alt="CSS-Zertifikat" class="certificate">
-                    <img src="res/SQL Mimo_page-0001.jpg" alt="SQL-Zertifikat" class="certificate">
+                    <img src="res/Fullstack Zertifikat.jpeg" alt="Fullstack-Zertifikat" class="certificate" loading="lazy">
+                    <img src="res/HTML Mimo_page-0001.jpg" alt="HTML-Zertifikat" class="certificate" loading="lazy">
+                    <img src="res/CSS Mimo_page-0001.jpg" alt="CSS-Zertifikat" class="certificate" loading="lazy">
+                    <img src="res/SQL Mimo_page-0001.jpg" alt="SQL-Zertifikat" class="certificate" loading="lazy">
                 </div>
             </div>
 
             <div class="certificate-group">
                 <h3>Weitere Nachweise</h3>
                 <div class="certificate-row">
-                    <img src="res/OS HackerX_page-0001.jpg" alt="Zertifikat zu Betriebssystem-Grundlagen" class="certificate">
-                    <img src="res/spoofing.jpg" alt="Zertifikat zum Thema Spoofing" class="certificate">
-                    <img src="res/GatheringInfos_page-0001.jpg" alt="Zertifikat zur Informationsbeschaffung" class="certificate">
+                    <img src="res/OS HackerX_page-0001.jpg" alt="Zertifikat zu Betriebssystem-Grundlagen" class="certificate" loading="lazy">
+                    <img src="res/spoofing.jpg" alt="Zertifikat zum Thema Spoofing" class="certificate" loading="lazy">
+                    <img src="res/GatheringInfos_page-0001.jpg" alt="Zertifikat zur Informationsbeschaffung" class="certificate" loading="lazy">
                 </div>
             </div>
 
@@ -245,22 +246,22 @@
                     <form class="contact-form" action="https://formspree.io/f/xdkozeaa" method="post">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" required autocomplete="name">
                         </div>
 
                         <div class="form-group">
                             <label for="email">E-Mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required autocomplete="email">
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Betreff</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" required autocomplete="off">
                         </div>
 
                         <div class="form-group">
                             <label for="message">Nachricht</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
                         </div>
 
                         <button type="submit" class="button">Nachricht senden</button>
